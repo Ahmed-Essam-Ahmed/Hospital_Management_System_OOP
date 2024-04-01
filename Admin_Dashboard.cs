@@ -16,5 +16,12 @@ namespace Hospital_Managment_System_OOP
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login_Page login_Page = new Login_Page();
+            login_Page.Show();
+        }
     }
 }

@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 namespace Hospital_Managment_System_OOP
 {
     internal static class Program
@@ -26,6 +28,8 @@ namespace Hospital_Managment_System_OOP
                 this.userID = userID;
                 this.password = password;
             }
+          
+
         }
         class Patient :userData
         {

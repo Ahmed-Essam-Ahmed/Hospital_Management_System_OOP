@@ -36,10 +36,10 @@
             button5 = new Button();
             button6 = new Button();
             button7 = new Button();
-            button8 = new Button();
+            btnHome = new Button();
             button9 = new Button();
-            button10 = new Button();
-            textBox1 = new TextBox();
+            btnBack = new Button();
+            txtAge = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
@@ -93,6 +93,7 @@
             button4.TabIndex = 4;
             button4.Text = "Update Age";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -121,14 +122,15 @@
             button7.Text = "Update Personal Health Number";
             button7.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // btnHome
             // 
-            button8.Location = new Point(642, 415);
-            button8.Name = "button8";
-            button8.Size = new Size(146, 23);
-            button8.TabIndex = 8;
-            button8.Text = "Return to Homepage";
-            button8.UseVisualStyleBackColor = true;
+            btnHome.Location = new Point(642, 415);
+            btnHome.Name = "btnHome";
+            btnHome.Size = new Size(146, 23);
+            btnHome.TabIndex = 8;
+            btnHome.Text = "Return to Homepage";
+            btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += btnHome_Click;
             // 
             // button9
             // 
@@ -139,21 +141,23 @@
             button9.Text = "Done";
             button9.UseVisualStyleBackColor = true;
             // 
-            // button10
+            // btnBack
             // 
-            button10.Location = new Point(12, 415);
-            button10.Name = "button10";
-            button10.Size = new Size(75, 23);
-            button10.TabIndex = 10;
-            button10.Text = "Back";
-            button10.UseVisualStyleBackColor = true;
+            btnBack.Location = new Point(12, 415);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 10;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
-            // textBox1
+            // txtAge
             // 
-            textBox1.Location = new Point(287, 96);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 11;
+            txtAge.Location = new Point(287, 96);
+            txtAge.Name = "txtAge";
+            txtAge.Size = new Size(100, 23);
+            txtAge.TabIndex = 11;
+            txtAge.Visible = false;
             // 
             // textBox2
             // 
@@ -208,10 +212,10 @@
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(button10);
+            Controls.Add(txtAge);
+            Controls.Add(btnBack);
             Controls.Add(button9);
-            Controls.Add(button8);
+            Controls.Add(btnHome);
             Controls.Add(button7);
             Controls.Add(button6);
             Controls.Add(button5);
@@ -236,10 +240,10 @@
         private Button button5;
         private Button button6;
         private Button button7;
-        private Button button8;
+        private Button btnHome;
         private Button button9;
-        private Button button10;
-        private TextBox textBox1;
+        private Button btnBack;
+        private TextBox txtAge;
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;

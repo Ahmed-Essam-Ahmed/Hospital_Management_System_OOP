@@ -32,8 +32,8 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            btnHome = new Button();
+            btnBack = new Button();
             label5 = new Label();
             SuspendLayout();
             // 
@@ -73,23 +73,25 @@
             label4.TabIndex = 4;
             label4.Text = "Disease";
             // 
-            // button1
+            // btnHome
             // 
-            button1.Location = new Point(647, 415);
-            button1.Name = "button1";
-            button1.Size = new Size(141, 23);
-            button1.TabIndex = 5;
-            button1.Text = "Return to Homepage";
-            button1.UseVisualStyleBackColor = true;
+            btnHome.Location = new Point(647, 415);
+            btnHome.Name = "btnHome";
+            btnHome.Size = new Size(141, 23);
+            btnHome.TabIndex = 5;
+            btnHome.Text = "Return to Homepage";
+            btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += btnHome_Click;
             // 
-            // button2
+            // btnBack
             // 
-            button2.Location = new Point(12, 415);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 6;
-            button2.Text = "Back";
-            button2.UseVisualStyleBackColor = true;
+            btnBack.Location = new Point(12, 415);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 6;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // label5
             // 
@@ -107,8 +109,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(label5);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnBack);
+            Controls.Add(btnHome);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -125,8 +127,8 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private Button button1;
-        private Button button2;
+        private Button btnHome;
+        private Button btnBack;
         private Label label5;
     }
 }

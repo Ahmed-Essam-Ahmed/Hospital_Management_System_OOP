@@ -21,5 +21,19 @@ namespace Hospital_Managment_System_OOP
         {
 
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login_Page login_Page = new Login_Page();
+            login_Page.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Front_Desk_Adding_Patient front_Desk_Adding_Patient = new Front_Desk_Adding_Patient();
+            front_Desk_Adding_Patient.Show();
+        }
     }
 }

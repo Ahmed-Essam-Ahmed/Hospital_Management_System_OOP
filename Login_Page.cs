@@ -11,5 +11,12 @@ namespace Hospital_Managment_System_OOP
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Patient_Dashboard d=new Patient_Dashboard();
+            d.Show();
+        }
     }
 }

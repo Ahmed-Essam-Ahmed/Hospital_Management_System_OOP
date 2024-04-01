@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btnUpdate = new Button();
+            btnFollowUp = new Button();
+            btnBack = new Button();
             SuspendLayout();
             // 
             // label1
@@ -44,41 +44,44 @@
             label1.TabIndex = 0;
             label1.Text = "Patient Dashboard";
             // 
-            // button1
+            // btnUpdate
             // 
-            button1.Location = new Point(100, 156);
-            button1.Name = "button1";
-            button1.Size = new Size(115, 23);
-            button1.TabIndex = 1;
-            button1.Text = "Update Info";
-            button1.UseVisualStyleBackColor = true;
+            btnUpdate.Location = new Point(100, 156);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(115, 23);
+            btnUpdate.TabIndex = 1;
+            btnUpdate.Text = "Update Info";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
             // 
-            // button2
+            // btnFollowUp
             // 
-            button2.Location = new Point(100, 224);
-            button2.Name = "button2";
-            button2.Size = new Size(115, 23);
-            button2.TabIndex = 2;
-            button2.Text = "Follow -Up ";
-            button2.UseVisualStyleBackColor = true;
+            btnFollowUp.Location = new Point(100, 224);
+            btnFollowUp.Name = "btnFollowUp";
+            btnFollowUp.Size = new Size(115, 23);
+            btnFollowUp.TabIndex = 2;
+            btnFollowUp.Text = "Follow -Up ";
+            btnFollowUp.UseVisualStyleBackColor = true;
+            btnFollowUp.Click += button2_Click;
             // 
-            // button3
+            // btnBack
             // 
-            button3.Location = new Point(12, 415);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 3;
-            button3.Text = "Back";
-            button3.UseVisualStyleBackColor = true;
+            btnBack.Location = new Point(12, 415);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 3;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // Patient_Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnBack);
+            Controls.Add(btnFollowUp);
+            Controls.Add(btnUpdate);
             Controls.Add(label1);
             Name = "Patient_Dashboard";
             Text = "Patient_Dashboard";
@@ -90,8 +93,8 @@
         #endregion
 
         private Label label1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnUpdate;
+        private Button btnFollowUp;
+        private Button btnBack;
     }
 }

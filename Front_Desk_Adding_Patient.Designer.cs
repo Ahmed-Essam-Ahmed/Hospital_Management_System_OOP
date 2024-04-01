@@ -40,8 +40,8 @@
             label10 = new Label();
             label11 = new Label();
             button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
+            btnHome = new Button();
+            btnBack = new Button();
             textBox1 = new TextBox();
             textBox2 = new TextBox();
             textBox3 = new TextBox();
@@ -162,23 +162,25 @@
             button1.Text = "Done";
             button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btnHome
             // 
-            button2.Location = new Point(644, 415);
-            button2.Name = "button2";
-            button2.Size = new Size(144, 23);
-            button2.TabIndex = 12;
-            button2.Text = "Return to Homepage";
-            button2.UseVisualStyleBackColor = true;
+            btnHome.Location = new Point(644, 415);
+            btnHome.Name = "btnHome";
+            btnHome.Size = new Size(144, 23);
+            btnHome.TabIndex = 12;
+            btnHome.Text = "Return to Homepage";
+            btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += button2_Click;
             // 
-            // button3
+            // btnBack
             // 
-            button3.Location = new Point(16, 415);
-            button3.Name = "button3";
-            button3.Size = new Size(75, 23);
-            button3.TabIndex = 13;
-            button3.Text = "Back";
-            button3.UseVisualStyleBackColor = true;
+            btnBack.Location = new Point(16, 415);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 13;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // textBox1
             // 
@@ -257,8 +259,8 @@
             Controls.Add(textBox3);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
-            Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnBack);
+            Controls.Add(btnHome);
             Controls.Add(button1);
             Controls.Add(label11);
             Controls.Add(label10);
@@ -292,8 +294,8 @@
         private Label label10;
         private Label label11;
         private Button button1;
-        private Button button2;
-        private Button button3;
+        private Button btnHome;
+        private Button btnBack;
         private TextBox textBox1;
         private TextBox textBox2;
         private TextBox textBox3;

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnBack = new Button();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -36,14 +36,15 @@
             label1 = new Label();
             SuspendLayout();
             // 
-            // button1
+            // btnBack
             // 
-            button1.Location = new Point(8, 415);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "Back";
-            button1.UseVisualStyleBackColor = true;
+            btnBack.Location = new Point(8, 415);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 4;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // button2
             // 
@@ -102,7 +103,7 @@
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnBack);
             Name = "Admin_Dashboard";
             Text = "Admin_Dashboard";
             ResumeLayout(false);
@@ -111,7 +112,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnBack;
         private Button button2;
         private Button button3;
         private Button button4;
