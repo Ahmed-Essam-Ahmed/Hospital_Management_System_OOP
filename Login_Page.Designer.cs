@@ -28,85 +28,101 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            bxUserName = new TextBox();
+            bxPassword = new TextBox();
             label1 = new Label();
-            label2 = new Label();
             label3 = new Label();
-            button1 = new Button();
+            btnLogin = new Button();
+            bxRole = new ComboBox();
+            lblRole = new Label();
+            btnRegister = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // bxUserName
             // 
-            textBox1.Location = new Point(383, 115);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            bxUserName.Location = new Point(371, 115);
+            bxUserName.Name = "bxUserName";
+            bxUserName.Size = new Size(100, 23);
+            bxUserName.TabIndex = 0;
             // 
-            // textBox2
+            // bxPassword
             // 
-            textBox2.Location = new Point(383, 171);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(383, 220);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 2;
+            bxPassword.Location = new Point(371, 172);
+            bxPassword.Name = "bxPassword";
+            bxPassword.Size = new Size(100, 23);
+            bxPassword.TabIndex = 2;
+            bxPassword.TextChanged += textBox3_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(289, 123);
+            label1.Location = new Point(277, 123);
             label1.Name = "label1";
             label1.Size = new Size(65, 15);
             label1.TabIndex = 3;
             label1.Text = "User Name";
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(289, 171);
-            label2.Name = "label2";
-            label2.Size = new Size(44, 15);
-            label2.TabIndex = 4;
-            label2.Text = "User ID";
-            // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(289, 223);
+            label3.Location = new Point(285, 180);
             label3.Name = "label3";
             label3.Size = new Size(57, 15);
             label3.TabIndex = 5;
             label3.Text = "Password";
             // 
-            // button1
+            // btnLogin
             // 
-            button1.Location = new Point(354, 280);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 6;
-            button1.Text = "Login";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnLogin.Location = new Point(289, 280);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(75, 23);
+            btnLogin.TabIndex = 6;
+            btnLogin.Text = "Login";
+            btnLogin.UseVisualStyleBackColor = true;
+            btnLogin.Click += button1_Click;
+            // 
+            // bxRole
+            // 
+            bxRole.DropDownStyle = ComboBoxStyle.DropDownList;
+            bxRole.FormattingEnabled = true;
+            bxRole.Items.AddRange(new object[] { "Admin", "Front_Desk", "Patient" });
+            bxRole.Location = new Point(371, 64);
+            bxRole.Name = "bxRole";
+            bxRole.Size = new Size(121, 23);
+            bxRole.TabIndex = 7;
+            // 
+            // lblRole
+            // 
+            lblRole.AutoSize = true;
+            lblRole.Location = new Point(289, 64);
+            lblRole.Name = "lblRole";
+            lblRole.Size = new Size(30, 15);
+            lblRole.TabIndex = 8;
+            lblRole.Text = "Role";
+            // 
+            // btnRegister
+            // 
+            btnRegister.Location = new Point(420, 280);
+            btnRegister.Name = "btnRegister";
+            btnRegister.Size = new Size(135, 23);
+            btnRegister.TabIndex = 11;
+            btnRegister.Text = "Register New User";
+            btnRegister.UseVisualStyleBackColor = true;
+            btnRegister.Click += btnRegister_Click;
             // 
             // Login_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            Controls.Add(btnRegister);
+            Controls.Add(lblRole);
+            Controls.Add(bxRole);
+            Controls.Add(btnLogin);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(bxPassword);
+            Controls.Add(bxUserName);
             Name = "Login_Page";
             Text = "Form1";
             Load += Form1_Load;
@@ -116,12 +132,13 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox bxUserName;
+        private TextBox bxPassword;
         private Label label1;
-        private Label label2;
         private Label label3;
-        private Button button1;
+        private Button btnLogin;
+        private ComboBox bxRole;
+        private Label lblRole;
+        private Button btnRegister;
     }
 }

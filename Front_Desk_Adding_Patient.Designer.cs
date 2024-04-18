@@ -51,6 +51,8 @@
             textBox8 = new TextBox();
             textBox9 = new TextBox();
             textBox10 = new TextBox();
+            textBox5 = new TextBox();
+            lblPhone = new Label();
             SuspendLayout();
             // 
             // label1
@@ -129,7 +131,7 @@
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(74, 188);
+            label9.Location = new Point(74, 217);
             label9.Name = "label9";
             label9.Size = new Size(28, 15);
             label9.TabIndex = 8;
@@ -138,7 +140,7 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(74, 238);
+            label10.Location = new Point(74, 267);
             label10.Name = "label10";
             label10.Size = new Size(137, 15);
             label10.TabIndex = 9;
@@ -147,7 +149,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(74, 283);
+            label11.Location = new Point(74, 312);
             label11.Name = "label11";
             label11.Size = new Size(70, 15);
             label11.TabIndex = 10;
@@ -226,30 +228,48 @@
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(251, 188);
+            textBox8.Location = new Point(251, 217);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(100, 23);
             textBox8.TabIndex = 21;
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(251, 230);
+            textBox9.Location = new Point(251, 259);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(100, 23);
             textBox9.TabIndex = 22;
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(251, 275);
+            textBox10.Location = new Point(251, 304);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(100, 23);
             textBox10.TabIndex = 23;
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(251, 185);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(100, 23);
+            textBox5.TabIndex = 24;
+            // 
+            // lblPhone
+            // 
+            lblPhone.AutoSize = true;
+            lblPhone.Location = new Point(74, 185);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(89, 15);
+            lblPhone.TabIndex = 25;
+            lblPhone.Text = "Phone NUmber";
             // 
             // Front_Desk_Adding_Patient
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lblPhone);
+            Controls.Add(textBox5);
             Controls.Add(textBox10);
             Controls.Add(textBox9);
             Controls.Add(textBox8);
@@ -305,5 +325,7 @@
         private TextBox textBox8;
         private TextBox textBox9;
         private TextBox textBox10;
+        private TextBox textBox5;
+        private Label lblPhone;
     }
 }

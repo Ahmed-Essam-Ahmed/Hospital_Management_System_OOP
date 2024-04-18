@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             btnBack = new Button();
-            button2 = new Button();
+            btnDelete_Patient = new Button();
             button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
             label1 = new Label();
             SuspendLayout();
             // 
@@ -46,42 +44,25 @@
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
-            // button2
+            // btnDelete_Patient
             // 
-            button2.AutoSize = true;
-            button2.Location = new Point(88, 108);
-            button2.Name = "button2";
-            button2.Size = new Size(104, 25);
-            button2.TabIndex = 5;
-            button2.Text = "Delete Patient ID";
-            button2.UseVisualStyleBackColor = true;
+            btnDelete_Patient.AutoSize = true;
+            btnDelete_Patient.Location = new Point(88, 155);
+            btnDelete_Patient.Name = "btnDelete_Patient";
+            btnDelete_Patient.Size = new Size(104, 25);
+            btnDelete_Patient.TabIndex = 5;
+            btnDelete_Patient.Text = "Delete Patient ID";
+            btnDelete_Patient.UseVisualStyleBackColor = true;
+            btnDelete_Patient.Click += btnDelete_Patient_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(88, 171);
+            button3.Location = new Point(88, 218);
             button3.Name = "button3";
             button3.Size = new Size(194, 23);
             button3.TabIndex = 6;
             button3.Text = "Adding Beds To Available List";
             button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            button4.Location = new Point(88, 226);
-            button4.Name = "button4";
-            button4.Size = new Size(75, 23);
-            button4.TabIndex = 7;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            button5.Location = new Point(88, 288);
-            button5.Name = "button5";
-            button5.Size = new Size(75, 23);
-            button5.TabIndex = 8;
-            button5.Text = "button5";
-            button5.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -97,12 +78,11 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
-            Controls.Add(button5);
-            Controls.Add(button4);
             Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnDelete_Patient);
             Controls.Add(btnBack);
             Name = "Admin_Dashboard";
             Text = "Admin_Dashboard";
@@ -113,10 +93,8 @@
         #endregion
 
         private Button btnBack;
-        private Button button2;
+        private Button btnDelete_Patient;
         private Button button3;
-        private Button button4;
-        private Button button5;
         private Label label1;
     }
 }

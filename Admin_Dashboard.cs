@@ -23,5 +23,12 @@ namespace Hospital_Managment_System_OOP
             Login_Page login_Page = new Login_Page();
             login_Page.Show();
         }
+
+        private void btnDelete_Patient_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_Delete_Patient admin_Delete_Patient = new Admin_Delete_Patient();
+            admin_Delete_Patient.Show();
+        }
     }
 }

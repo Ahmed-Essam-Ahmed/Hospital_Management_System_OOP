@@ -32,8 +32,8 @@ namespace Hospital_Managment_System_OOP
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Front_Desk_Adding_Patient front_Desk_Adding_Patient=new Front_Desk_Adding_Patient();
-            front_Desk_Adding_Patient.Show();
+            Front_Desk_Dashboard front_Desk_Dashboard=new Front_Desk_Dashboard();
+            front_Desk_Dashboard.Show();
         }
     }
 }
