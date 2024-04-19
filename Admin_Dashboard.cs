@@ -15,6 +15,7 @@ namespace Hospital_Managment_System_OOP
         public Admin_Dashboard()
         {
             InitializeComponent();
+            
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -29,6 +30,11 @@ namespace Hospital_Managment_System_OOP
             this.Hide();
             Admin_Delete_Patient admin_Delete_Patient = new Admin_Delete_Patient();
             admin_Delete_Patient.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

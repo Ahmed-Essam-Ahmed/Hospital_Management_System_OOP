@@ -1,23 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
 
 namespace Hospital_Managment_System_OOP
 {
     internal class Patient : UserData
     {
-        int age;
-        int phone;
-        int PHN; //Personal Health Number
-        int postalCode;
+        string age;
+        string phone;
+        string PHN; //Personal Health Number
+        string postalCode;
         string country;
         string address;
         string city;
 
-        public Patient(string firstName, string lastName, int age, int phone, int PHN, int postalCode, string country,
-            string address, string city, string UserName, string password) : base(firstName, lastName,UserName, password)
+        public Patient(string firstName, string lastName, string age, string phone, string PHN, string postalCode, string country,
+            string address, string city, string UserName, string password) : base(firstName, lastName, UserName, password)
         {
             this.age = age;
             this.phone = phone;
@@ -26,6 +23,24 @@ namespace Hospital_Managment_System_OOP
             this.country = country;
             this.address = address;
             this.city = city;
+        }
+       
+
+        public string generatePatientPassword()
+        {
+            string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
+
+            string lastLine = lines[lines.Length - 1];
+            string[] parts = lastLine.Split(',');
+            string lastPassword = parts[0];
+
+            int newPassword = int.Parse(lastPassword) + 1;
+
+            lines[lines.Length - 1] = $"{newPassword},{parts[1]}";
+
+            File.WriteAllLines("PatientPassAndBeds.txt", lines);
+
+            return lastPassword;
         }
     }
 }

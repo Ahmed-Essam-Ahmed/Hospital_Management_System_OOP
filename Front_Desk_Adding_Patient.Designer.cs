@@ -34,25 +34,24 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            label7 = new Label();
             label8 = new Label();
             label9 = new Label();
             label10 = new Label();
             label11 = new Label();
-            button1 = new Button();
+            btnDone = new Button();
             btnHome = new Button();
             btnBack = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox6 = new TextBox();
-            textBox7 = new TextBox();
-            textBox8 = new TextBox();
-            textBox9 = new TextBox();
-            textBox10 = new TextBox();
-            textBox5 = new TextBox();
+            bxCity = new TextBox();
+            bxFirstName = new TextBox();
+            bxLastName = new TextBox();
+            bxAge = new TextBox();
+            bxPHN = new TextBox();
+            bxPostal = new TextBox();
+            bxPhoneNum = new TextBox();
             lblPhone = new Label();
+            bxCountry = new ComboBox();
+            bxAddress = new RichTextBox();
+            bxDisease = new ComboBox();
             SuspendLayout();
             // 
             // label1
@@ -95,7 +94,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(388, 188);
+            label5.Location = new Point(389, 229);
             label5.Name = "label5";
             label5.Size = new Size(28, 15);
             label5.TabIndex = 4;
@@ -104,20 +103,11 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(388, 230);
+            label6.Location = new Point(389, 271);
             label6.Name = "label6";
             label6.Size = new Size(104, 15);
             label6.TabIndex = 5;
             label6.Text = "Prescribed Disease";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(388, 283);
-            label7.Name = "label7";
-            label7.Size = new Size(58, 15);
-            label7.TabIndex = 6;
-            label7.Text = "Patient ID";
             // 
             // label8
             // 
@@ -155,14 +145,15 @@
             label11.TabIndex = 10;
             label11.Text = "Postal Code";
             // 
-            // button1
+            // btnDone
             // 
-            button1.Location = new Point(459, 336);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 11;
-            button1.Text = "Done";
-            button1.UseVisualStyleBackColor = true;
+            btnDone.Location = new Point(474, 369);
+            btnDone.Name = "btnDone";
+            btnDone.Size = new Size(75, 23);
+            btnDone.TabIndex = 11;
+            btnDone.Text = "Done";
+            btnDone.UseVisualStyleBackColor = true;
+            btnDone.Click += button1_Click;
             // 
             // btnHome
             // 
@@ -184,75 +175,55 @@
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
-            // textBox1
+            // bxCity
             // 
-            textBox1.Location = new Point(540, 97);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 14;
+            bxCity.Location = new Point(541, 229);
+            bxCity.Name = "bxCity";
+            bxCity.Size = new Size(100, 23);
+            bxCity.TabIndex = 16;
             // 
-            // textBox2
+            // bxFirstName
             // 
-            textBox2.Location = new Point(540, 137);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 15;
+            bxFirstName.Location = new Point(251, 97);
+            bxFirstName.Name = "bxFirstName";
+            bxFirstName.Size = new Size(100, 23);
+            bxFirstName.TabIndex = 19;
             // 
-            // textBox3
+            // bxLastName
             // 
-            textBox3.Location = new Point(540, 188);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 16;
+            bxLastName.Location = new Point(251, 137);
+            bxLastName.Name = "bxLastName";
+            bxLastName.Size = new Size(100, 23);
+            bxLastName.TabIndex = 20;
             // 
-            // textBox4
+            // bxAge
             // 
-            textBox4.Location = new Point(540, 235);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 17;
+            bxAge.Location = new Point(251, 217);
+            bxAge.Name = "bxAge";
+            bxAge.Size = new Size(100, 23);
+            bxAge.TabIndex = 21;
             // 
-            // textBox6
+            // bxPHN
             // 
-            textBox6.Location = new Point(251, 97);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 19;
+            bxPHN.Location = new Point(251, 259);
+            bxPHN.Name = "bxPHN";
+            bxPHN.Size = new Size(100, 23);
+            bxPHN.TabIndex = 22;
             // 
-            // textBox7
+            // bxPostal
             // 
-            textBox7.Location = new Point(251, 137);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(100, 23);
-            textBox7.TabIndex = 20;
+            bxPostal.Location = new Point(251, 304);
+            bxPostal.Name = "bxPostal";
+            bxPostal.Size = new Size(100, 23);
+            bxPostal.TabIndex = 23;
             // 
-            // textBox8
+            // bxPhoneNum
             // 
-            textBox8.Location = new Point(251, 217);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(100, 23);
-            textBox8.TabIndex = 21;
-            // 
-            // textBox9
-            // 
-            textBox9.Location = new Point(251, 259);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(100, 23);
-            textBox9.TabIndex = 22;
-            // 
-            // textBox10
-            // 
-            textBox10.Location = new Point(251, 304);
-            textBox10.Name = "textBox10";
-            textBox10.Size = new Size(100, 23);
-            textBox10.TabIndex = 23;
-            // 
-            // textBox5
-            // 
-            textBox5.Location = new Point(251, 185);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 24;
+            bxPhoneNum.Location = new Point(251, 185);
+            bxPhoneNum.Name = "bxPhoneNum";
+            bxPhoneNum.Size = new Size(100, 23);
+            bxPhoneNum.TabIndex = 24;
+            bxPhoneNum.TextChanged += textBox5_TextChanged;
             // 
             // lblPhone
             // 
@@ -264,30 +235,55 @@
             lblPhone.Text = "Phone Number";
             lblPhone.Click += lblPhone_Click;
             // 
+            // bxCountry
+            // 
+            bxCountry.FormattingEnabled = true;
+            bxCountry.Items.AddRange(new object[] { "Afghanistan", "Albania", "Algeria", "Andorra", "Angola", "Antigua and Barbuda", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "The Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bhutan", "Bolivia", "Bosnia and Herzegovina", "Botswana", "Brazil", "Brunei", "Bulgaria", "Burkina Faso", "Burundi", "Cabo Verde", "Cambodia", "Cameroon", "Canada", "Central African Republic", "Chad", "Chile", "China", "Colombia", "Comoros", "Congo, Democratic Republic of the", "Congo, Republic of the", "Costa Rica", "Côte d’Ivoire", "Croatia", "Cuba", "Cyprus", "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor (Timor-Leste)", "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Eswatini", "Ethiopia", "Fiji", "Finland", "France", "Gabon", "The Gambia", "Georgia", "Germany", "Ghana", "Greece", "Grenada", "Guatemala", "Guinea", "Guinea-Bissau", "Guyana", "Haiti", "Honduras", "Hungary", "Iceland", "India", "Indonesia", "Iran", "Iraq", "Ireland", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati", "Korea, North", "Korea, South", "Kosovo", "Kuwait", "Kyrgyzstan", "Laos", "Latvia", "Lebanon", "Lesotho", "Liberia", "Libya", "Liechtenstein", "Lithuania", "Luxembourg", "Madagascar", "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Mauritania", "Mauritius", "Mexico", "Micronesia, Federated States of", "Moldova", "Monaco", "Mongolia", "Montenegro", "Morocco", "Mozambique", "Myanmar (Burma)", "Namibia", "Nauru", "Nepal", "Netherlands", "New Zealand", "Nicaragua", "Niger", "Nigeria", "North Macedonia", "Norway", "Oman", "Pakistan", "Palau", "Palestine", "Panama", "Papua New Guinea", "Paraguay", "Peru", "Philippines", "Poland", "Portugal", "Qatar", "Romania", "Russia", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines", "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Serbia", "Seychelles", "Sierra Leone", "Singapore", "Slovakia", "Slovenia", "Solomon Islands", "Somalia", "South Africa", "Spain", "Sri Lanka", "Sudan", "Sudan, South", "Suriname", "Sweden", "Switzerland", "Syria", "Taiwan", "Tajikistan", "Tanzania", "Thailand", "Togo", "Tonga", "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Tuvalu", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States", "Uruguay", "Uzbekistan", "Vanuatu", "Vatican City", "Venezuela", "Vietnam", "Yemen", "Zambia", "Zimbabwe" });
+            bxCountry.Location = new Point(487, 97);
+            bxCountry.Name = "bxCountry";
+            bxCountry.Size = new Size(217, 23);
+            bxCountry.TabIndex = 26;
+            // 
+            // bxAddress
+            // 
+            bxAddress.Location = new Point(487, 126);
+            bxAddress.Name = "bxAddress";
+            bxAddress.Size = new Size(217, 52);
+            bxAddress.TabIndex = 27;
+            bxAddress.Text = "";
+            // 
+            // bxDisease
+            // 
+            bxDisease.FormattingEnabled = true;
+            bxDisease.Items.AddRange(new object[] { "Chickenpox", "Common cold", "COVID-19", "Influenza", "Monkeypox" });
+            bxDisease.Location = new Point(520, 271);
+            bxDisease.Name = "bxDisease";
+            bxDisease.Size = new Size(121, 23);
+            bxDisease.TabIndex = 28;
+            // 
             // Front_Desk_Adding_Patient
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(bxDisease);
+            Controls.Add(bxAddress);
+            Controls.Add(bxCountry);
             Controls.Add(lblPhone);
-            Controls.Add(textBox5);
-            Controls.Add(textBox10);
-            Controls.Add(textBox9);
-            Controls.Add(textBox8);
-            Controls.Add(textBox7);
-            Controls.Add(textBox6);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(bxPhoneNum);
+            Controls.Add(bxPostal);
+            Controls.Add(bxPHN);
+            Controls.Add(bxAge);
+            Controls.Add(bxLastName);
+            Controls.Add(bxFirstName);
+            Controls.Add(bxCity);
             Controls.Add(btnBack);
             Controls.Add(btnHome);
-            Controls.Add(button1);
+            Controls.Add(btnDone);
             Controls.Add(label11);
             Controls.Add(label10);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -314,19 +310,19 @@
         private Label label9;
         private Label label10;
         private Label label11;
-        private Button button1;
+        private Button btnDone;
         private Button btnHome;
         private Button btnBack;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private TextBox textBox4;
-        private TextBox textBox6;
-        private TextBox textBox7;
-        private TextBox textBox8;
-        private TextBox textBox9;
-        private TextBox textBox10;
-        private TextBox textBox5;
+        private TextBox bxCity;
+        private TextBox bxFirstName;
+        private TextBox bxLastName;
+        private TextBox bxAge;
+        private TextBox bxPHN;
+        private TextBox bxPostal;
+        private TextBox bxPhoneNum;
         private Label lblPhone;
+        private ComboBox bxCountry;
+        private RichTextBox bxAddress;
+        private ComboBox bxDisease;
     }
 }

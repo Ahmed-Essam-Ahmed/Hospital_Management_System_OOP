@@ -38,8 +38,8 @@ namespace Hospital_Managment_System_OOP
                     string password = bxPassword.Text;
 
                     string[] lines = File.ReadAllLines("AdminData.txt");
-                    
-                    foreach(string line in lines)
+
+                    foreach (string line in lines)
                     {
                         string[] parts = line.Split(',');
                         if (parts[2] == username)
@@ -89,12 +89,20 @@ namespace Hospital_Managment_System_OOP
                     Login_Page login_Page = new Login_Page();
                     login_Page.Show();
                 }
-                
+
                 else
                 {
                     MessageBox.Show("Choose Role");
                 }
             }
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login_Page Login_Page = new Login_Page();
+            Login_Page.Show();
+
         }
     }
 }

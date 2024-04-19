@@ -32,6 +32,7 @@
             btnDelete_Patient = new Button();
             button3 = new Button();
             label1 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // btnBack
@@ -74,12 +75,23 @@
             label1.TabIndex = 9;
             label1.Text = "Admin Dashboard";
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(546, 93);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 11;
+            label3.Text = "label3";
+            label3.Click += label3_Click;
+            // 
             // Admin_Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
             Controls.Add(label1);
             Controls.Add(button3);
             Controls.Add(btnDelete_Patient);
@@ -96,5 +108,6 @@
         private Button btnDelete_Patient;
         private Button button3;
         private Label label1;
+        private Label label3;
     }
 }

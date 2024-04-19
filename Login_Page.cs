@@ -33,12 +33,14 @@ namespace Hospital_Managment_System_OOP
                         foreach (string line in lines)
                         {
                             string[] parts = line.Split(',');
+                            //Admin currentAdmin=new Admin(parts[0], parts[1], parts[2], parts[3]);
                             if (parts[2] == username && parts[3] == password)
                             {
                                 MessageBox.Show("Login Successful!");
                                 Admin_Dashboard admin = new Admin_Dashboard();
                                 this.Hide();
                                 admin.Show();
+                        
                                 return;
                             }
                         }
@@ -77,14 +79,12 @@ namespace Hospital_Managment_System_OOP
                     {
                         string username = bxUserName.Text;
                         string password = bxPassword.Text;
-
-                        // Read usernames and passwords from the text file
                         string[] lines = File.ReadAllLines("PatientData.txt");
 
                         foreach (string line in lines)
                         {
                             string[] parts = line.Split(',');
-                            if (parts[9] == username && parts[10] == password)
+                            if (parts[10] == username && parts[11] == password)
                             {
                                 MessageBox.Show("Login Successful!");
                                 Patient_Dashboard patient = new Patient_Dashboard();
@@ -104,13 +104,7 @@ namespace Hospital_Managment_System_OOP
                 MessageBox.Show("Please enter a role");
             }
 
-            //this.Hide();
-            ////Admin_Dashboard admin =new Admin_Dashboard();
-            ////admin.Show();
-            ////Front_Desk_Dashboard front_Desk_Dashboard = new Front_Desk_Dashboard();
-            ////front_Desk_Dashboard.Show();
-            //Patient_Dashboard patient_Dashboard = new Patient_Dashboard();
-            //patient_Dashboard.Show();
+           
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)

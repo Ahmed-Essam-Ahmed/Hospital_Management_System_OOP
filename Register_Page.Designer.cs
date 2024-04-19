@@ -39,6 +39,7 @@
             btnRegister = new Button();
             bxRole = new ComboBox();
             label5 = new Label();
+            btnBack = new Button();
             SuspendLayout();
             // 
             // label1
@@ -134,11 +135,22 @@
             label5.TabIndex = 10;
             label5.Text = "Choose Role";
             // 
+            // btnBack
+            // 
+            btnBack.Location = new Point(12, 415);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(75, 23);
+            btnBack.TabIndex = 11;
+            btnBack.Text = "Back";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
             // Register_Page
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnBack);
             Controls.Add(label5);
             Controls.Add(bxRole);
             Controls.Add(btnRegister);
@@ -169,5 +181,6 @@
         private Button btnRegister;
         private ComboBox bxRole;
         private Label label5;
+        private Button btnBack;
     }
 }
