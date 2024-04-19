@@ -42,5 +42,15 @@ namespace Hospital_Managment_System_OOP
 
             return lastPassword;
         }
+
+        public override void Register()
+        {
+            throw new NotImplementedException();
+        }
+
+        public override bool Login()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

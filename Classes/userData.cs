@@ -4,7 +4,7 @@ using System.Text.Json;
 
 namespace Hospital_Managment_System_OOP
 {
-    internal class UserData
+    internal abstract class UserData
     {
         protected string firstName;
         protected string lastName;
@@ -18,6 +18,11 @@ namespace Hospital_Managment_System_OOP
             this.UserName = UserName;
             this.password = password;
         }
+
+        public abstract void Register();
+        public abstract bool Login();
+        
+
 
         
             

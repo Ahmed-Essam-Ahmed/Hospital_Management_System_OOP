@@ -3,52 +3,48 @@
   "WorkspaceRootPath": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\admin_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:admin_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\classes\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:classes\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\admin_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:admin_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\front_desk_adding_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:front_desk_adding_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\register_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:register_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\register_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:register_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\front_desk_adding_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:front_desk_adding_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\register_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:register_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\classes\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:classes\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\classes\\frontdesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\classes\\frontdesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:classes\\frontdesk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\front_desk_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:front_desk_dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\classes\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:classes\\userdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:login_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\front_desk_adding_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:front_desk_adding_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\front_desk_adding_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:front_desk_adding_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Login_Page.cs [Design]",
               "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Login_Page.cs",
               "RelativeDocumentMoniker": "Login_Page.cs",
@@ -75,7 +71,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
+              "Title": "Login_Page.cs",
+              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Login_Page.cs",
+              "RelativeDocumentMoniker": "Login_Page.cs",
+              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Login_Page.cs",
+              "RelativeToolTip": "Login_Page.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAABRAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T14:10:24.884Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Register_Page.cs [Design]",
               "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Register_Page.cs",
               "RelativeDocumentMoniker": "Register_Page.cs",
@@ -88,13 +98,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "Register_Page.cs",
               "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Register_Page.cs",
               "RelativeDocumentMoniker": "Register_Page.cs",
               "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Register_Page.cs",
               "RelativeToolTip": "Register_Page.cs",
-              "ViewState": "AQIAAFUAAAAAAAAAAAAkwGcAAAAeAAAA",
+              "ViewState": "AQIAABoAAAAAAAAAAAA9wCcAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T11:41:43.255Z",
               "IsPinned": true,
@@ -102,117 +112,92 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Front_Desk_Adding_Patient.cs",
-              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Front_Desk_Adding_Patient.cs",
-              "RelativeDocumentMoniker": "Front_Desk_Adding_Patient.cs",
-              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Front_Desk_Adding_Patient.cs",
-              "RelativeToolTip": "Front_Desk_Adding_Patient.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAkwE8AAABQAAAA",
+              "DocumentIndex": 2,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\Admin.cs",
+              "RelativeDocumentMoniker": "Classes\\Admin.cs",
+              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\Admin.cs",
+              "RelativeToolTip": "Classes\\Admin.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAswA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T13:30:48.388Z",
+              "WhenOpened": "2024-04-19T17:11:30.661Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Admin_Dashboard.cs",
-              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Admin_Dashboard.cs",
-              "RelativeDocumentMoniker": "Admin_Dashboard.cs",
-              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Admin_Dashboard.cs",
-              "RelativeToolTip": "Admin_Dashboard.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T15:20:50.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Admin_Dashboard.cs [Design]",
               "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Admin_Dashboard.cs",
               "RelativeDocumentMoniker": "Admin_Dashboard.cs",
               "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Admin_Dashboard.cs [Design]",
               "RelativeToolTip": "Admin_Dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T15:20:20.874Z",
+              "WhenOpened": "2024-04-19T17:31:28.43Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FrontDesk.cs",
-              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\FrontDesk.cs",
-              "RelativeDocumentMoniker": "Classes\\FrontDesk.cs",
-              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\FrontDesk.cs",
-              "RelativeToolTip": "Classes\\FrontDesk.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T15:16:05.57Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "Patient.cs",
-              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\Patient.cs",
-              "RelativeDocumentMoniker": "Classes\\Patient.cs",
-              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\Patient.cs",
-              "RelativeToolTip": "Classes\\Patient.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAYwBoAAAAHAAAA",
+              "Title": "Front_Desk_Adding_Patient.cs",
+              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Front_Desk_Adding_Patient.cs",
+              "RelativeDocumentMoniker": "Front_Desk_Adding_Patient.cs",
+              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Front_Desk_Adding_Patient.cs",
+              "RelativeToolTip": "Front_Desk_Adding_Patient.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAowEAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T14:19:50.245Z",
+              "WhenOpened": "2024-04-19T17:25:33.099Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login_Page.cs",
-              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Login_Page.cs",
-              "RelativeDocumentMoniker": "Login_Page.cs",
-              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Login_Page.cs",
-              "RelativeToolTip": "Login_Page.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAwwCAAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T14:10:24.884Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Front_Desk_Adding_Patient.cs [Design]",
               "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Front_Desk_Adding_Patient.cs",
               "RelativeDocumentMoniker": "Front_Desk_Adding_Patient.cs",
               "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Front_Desk_Adding_Patient.cs [Design]",
               "RelativeToolTip": "Front_Desk_Adding_Patient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T14:04:14.508Z",
+              "WhenOpened": "2024-04-19T17:25:31.338Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Front_Desk_Dashboard.cs [Design]",
-              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Front_Desk_Dashboard.cs",
-              "RelativeDocumentMoniker": "Front_Desk_Dashboard.cs",
-              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Front_Desk_Dashboard.cs [Design]",
-              "RelativeToolTip": "Front_Desk_Dashboard.cs [Design]",
+              "DocumentIndex": 6,
+              "Title": "FrontDesk.cs",
+              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\FrontDesk.cs",
+              "RelativeDocumentMoniker": "Classes\\FrontDesk.cs",
+              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\FrontDesk.cs",
+              "RelativeToolTip": "Classes\\FrontDesk.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T13:18:10.058Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-19T15:16:05.57Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAABAAAA",
+              "DocumentIndex": 0,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\Patient.cs",
+              "RelativeDocumentMoniker": "Classes\\Patient.cs",
+              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\Patient.cs",
+              "RelativeToolTip": "Classes\\Patient.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowDcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-31T23:03:40.21Z",
+              "WhenOpened": "2024-04-19T17:11:33.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "userData.cs",
+              "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\userData.cs",
+              "RelativeDocumentMoniker": "Classes\\userData.cs",
+              "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\userData.cs",
+              "RelativeToolTip": "Classes\\userData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-19T16:56:40.332Z",
               "EditorCaption": ""
             }
           ]

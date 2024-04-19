@@ -27,25 +27,20 @@ namespace Hospital_Managment_System_OOP
                         string username = bxUserName.Text;
                         string password = bxPassword.Text;
 
-                        // Read usernames and passwords from the text file
-                        string[] lines = File.ReadAllLines("AdminData.txt");
-
-                        foreach (string line in lines)
+                        Admin currentAdmin=new Admin(username, password);
+                        if(currentAdmin.Login())
                         {
-                            string[] parts = line.Split(',');
-                            //Admin currentAdmin=new Admin(parts[0], parts[1], parts[2], parts[3]);
-                            if (parts[2] == username && parts[3] == password)
-                            {
-                                MessageBox.Show("Login Successful!");
-                                Admin_Dashboard admin = new Admin_Dashboard();
-                                this.Hide();
-                                admin.Show();
-                        
-                                return;
-                            }
-                        }
+                            MessageBox.Show("Login Successful!");
+                            Admin_Dashboard admin = new Admin_Dashboard();
+                            this.Hide();
+                            admin.Show();
 
-                        MessageBox.Show("Invalid username or password.");
+                            return;
+                        }
+                        else
+                        {
+                            MessageBox.Show("Invalid username or password.");
+                        }
                     }
                 }
                 else if (selectedItem == "Front Desk")
@@ -54,13 +49,9 @@ namespace Hospital_Managment_System_OOP
                         string username = bxUserName.Text;
                         string password = bxPassword.Text;
 
-                        // Read usernames and passwords from the text file
-                        string[] lines = File.ReadAllLines("Front_DeskData.txt");
-
-                        foreach (string line in lines)
+                        FrontDesk currentFrontDesk=new FrontDesk(username, password);
                         {
-                            string[] parts = line.Split(',');
-                            if (parts[2] == username && parts[3] == password)
+                            if(currentFrontDesk.Login())
                             {
                                 MessageBox.Show("Login Successful!");
                                 Front_Desk_Dashboard frontdesk = new Front_Desk_Dashboard();
@@ -68,9 +59,11 @@ namespace Hospital_Managment_System_OOP
                                 frontdesk.Show();
                                 return;
                             }
+                            else
+                            {
+                                MessageBox.Show("Invalid username or password.");
+                            }
                         }
-
-                        MessageBox.Show("Invalid username or password.");
                     }
                 }
 

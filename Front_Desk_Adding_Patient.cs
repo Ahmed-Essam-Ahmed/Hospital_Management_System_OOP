@@ -70,12 +70,12 @@ namespace Hospital_Managment_System_OOP
                 postal, country, address, city, firstName+lastName,password);
 
             string assignedPassword=currentPatient.generatePatientPassword();
-
+            
             using (StreamWriter writer = new StreamWriter("PatientData.txt", true))
-            
+
                 writer.WriteLine($"{firstName},{lastName},{phoneNum},{age},{PHN},{postal},{country},{address}," +
-                    $"{city},{disease},{firstName+'_'+lastName},{assignedPassword}");
-            
+                    $"{city},{disease},{firstName + '_' + lastName},{assignedPassword}");
+
 
             MessageBox.Show($"Registration Successful!\nUsername:{firstName+'_'+lastName} \nPassword:{assignedPassword}");
 

@@ -36,25 +36,11 @@ namespace Hospital_Managment_System_OOP
                     string lastName = bxLastName.Text;
                     string username = bxUserName.Text;
                     string password = bxPassword.Text;
+                    
+                    Admin currentAdmin=new Admin(firstName, lastName, username, password);
+                    currentAdmin.Register();
 
-                    string[] lines = File.ReadAllLines("AdminData.txt");
-
-                    foreach (string line in lines)
-                    {
-                        string[] parts = line.Split(',');
-                        if (parts[2] == username)
-                        {
-                            MessageBox.Show("Username Taken");
-                            return;
-                        }
-                    }
-
-                    using (StreamWriter writer = new StreamWriter("AdminData.txt", true))
-                    {
-                        writer.WriteLine($"{firstName},{lastName},{username},{password}");
-                    }
-
-                    MessageBox.Show("Registration Successful!");
+                   
                     this.Hide();
                     Login_Page login_Page = new Login_Page();
                     login_Page.Show();
@@ -67,24 +53,9 @@ namespace Hospital_Managment_System_OOP
                     string username = bxUserName.Text;
                     string password = bxPassword.Text;
 
-                    string[] lines = File.ReadAllLines("Front_DeskData.txt");
+                    FrontDesk currentFrontDesk = new FrontDesk(firstName, lastName, username, password);
+                    currentFrontDesk.Register();
 
-                    foreach (string line in lines)
-                    {
-                        string[] parts = line.Split(',');
-                        if (parts[2] == username)
-                        {
-                            MessageBox.Show("Username Taken");
-                            return;
-                        }
-                    }
-
-                    using (StreamWriter writer = new StreamWriter("Front_DeskData.txt", true))
-                    {
-                        writer.WriteLine($"{firstName},{lastName},{username},{password}");
-                    }
-
-                    MessageBox.Show("Registration Successful!");
                     this.Hide();
                     Login_Page login_Page = new Login_Page();
                     login_Page.Show();
