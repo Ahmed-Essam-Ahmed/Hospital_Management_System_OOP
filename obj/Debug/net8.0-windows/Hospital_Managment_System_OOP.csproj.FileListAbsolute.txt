@@ -243,7 +243,6 @@ D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Login_Page.resources
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_Dashboard.resources
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_FollowUp.resources
-D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_Update_Info.resources
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Register_Page.resources
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.csproj.GenerateResource.cache
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.GeneratedMSBuildEditorConfig.editorconfig
@@ -259,3 +258,5 @@ D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\ref\Hospital_Managment_System_OOP.dll
 C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_Update.resources
 C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Admin_AddBeds.resources
+D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Admin_AddBeds.resources
+D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_Update.resources
