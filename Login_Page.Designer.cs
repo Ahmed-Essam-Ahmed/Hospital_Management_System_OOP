@@ -85,11 +85,12 @@
             // 
             bxRole.DropDownStyle = ComboBoxStyle.DropDownList;
             bxRole.FormattingEnabled = true;
-            bxRole.Items.AddRange(new object[] { "Admin", "Front_Desk", "Patient" });
+            bxRole.Items.AddRange(new object[] { "Admin", "Front Desk", "Patient" });
             bxRole.Location = new Point(371, 64);
             bxRole.Name = "bxRole";
             bxRole.Size = new Size(121, 23);
             bxRole.TabIndex = 7;
+            bxRole.SelectedIndexChanged += bxRole_SelectedIndexChanged;
             // 
             // lblRole
             // 

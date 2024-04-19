@@ -37,7 +37,18 @@ namespace Hospital_Managment_System_OOP
                     string username = bxUserName.Text;
                     string password = bxPassword.Text;
 
-                    // Write user information to a text file
+                    string[] lines = File.ReadAllLines("AdminData.txt");
+                    
+                    foreach(string line in lines)
+                    {
+                        string[] parts = line.Split(',');
+                        if (parts[2] == username)
+                        {
+                            MessageBox.Show("Username Taken");
+                            return;
+                        }
+                    }
+
                     using (StreamWriter writer = new StreamWriter("AdminData.txt", true))
                     {
                         writer.WriteLine($"{firstName},{lastName},{username},{password}");
@@ -56,7 +67,18 @@ namespace Hospital_Managment_System_OOP
                     string username = bxUserName.Text;
                     string password = bxPassword.Text;
 
-                    // Write user information to a text file
+                    string[] lines = File.ReadAllLines("Front_DeskData.txt");
+
+                    foreach (string line in lines)
+                    {
+                        string[] parts = line.Split(',');
+                        if (parts[2] == username)
+                        {
+                            MessageBox.Show("Username Taken");
+                            return;
+                        }
+                    }
+
                     using (StreamWriter writer = new StreamWriter("Front_DeskData.txt", true))
                     {
                         writer.WriteLine($"{firstName},{lastName},{username},{password}");

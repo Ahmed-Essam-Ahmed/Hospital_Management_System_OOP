@@ -259,9 +259,10 @@
             lblPhone.AutoSize = true;
             lblPhone.Location = new Point(74, 185);
             lblPhone.Name = "lblPhone";
-            lblPhone.Size = new Size(89, 15);
+            lblPhone.Size = new Size(88, 15);
             lblPhone.TabIndex = 25;
-            lblPhone.Text = "Phone NUmber";
+            lblPhone.Text = "Phone Number";
+            lblPhone.Click += lblPhone_Click;
             // 
             // Front_Desk_Adding_Patient
             // 

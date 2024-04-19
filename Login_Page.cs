@@ -97,7 +97,7 @@ namespace Hospital_Managment_System_OOP
                         MessageBox.Show("Invalid username or password.");
                     }
                 }
-                
+
             }
             else
             {
@@ -116,13 +116,18 @@ namespace Hospital_Managment_System_OOP
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
         }
-    
+
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
             this.Hide();
             Register_Page register_Page = new Register_Page();
             register_Page.Show();
+        }
+
+        private void bxRole_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
