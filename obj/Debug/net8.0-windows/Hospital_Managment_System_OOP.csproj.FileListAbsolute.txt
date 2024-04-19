@@ -110,7 +110,6 @@ C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Manageme
 C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Login_Page.resources
 C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_Dashboard.resources
 C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_FollowUp.resources
-C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_Update_Info.resources
 C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.csproj.GenerateResource.cache
 C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.AssemblyInfoInputs.cache
@@ -258,3 +257,5 @@ D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\refint\Ho
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.pdb
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.genruntimeconfig.cache
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\ref\Hospital_Managment_System_OOP.dll
+C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_Update.resources
+C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Admin_AddBeds.resources

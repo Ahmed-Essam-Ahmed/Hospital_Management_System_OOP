@@ -15,7 +15,7 @@ namespace Hospital_Managment_System_OOP
         public Admin_Dashboard()
         {
             InitializeComponent();
-            
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -33,6 +33,18 @@ namespace Hospital_Managment_System_OOP
         }
 
         private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_AddBeds admin_AddBeds = new Admin_AddBeds();
+            admin_AddBeds.Show();
+        }
+
+        private void Admin_Dashboard_Load(object sender, EventArgs e)
         {
 
         }

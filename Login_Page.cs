@@ -80,6 +80,7 @@ namespace Hospital_Managment_System_OOP
                             if (parts[10] == username && parts[11] == password)
                             {
                                 MessageBox.Show("Login Successful!");
+                                
                                 Patient_Dashboard patient = new Patient_Dashboard();
                                 this.Hide();
                                 patient.Show();

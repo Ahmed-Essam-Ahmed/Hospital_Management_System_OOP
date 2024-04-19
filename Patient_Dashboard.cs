@@ -16,7 +16,7 @@ namespace Hospital_Managment_System_OOP
         {
             InitializeComponent();
         }
-
+            
         private void Patient_Dashboard_Load(object sender, EventArgs e)
         {
         }
@@ -31,7 +31,7 @@ namespace Hospital_Managment_System_OOP
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Patient_Update_Info update_Info = new Patient_Update_Info();
+            Patient_Update update_Info = new Patient_Update();
             update_Info.Show();
         }
 

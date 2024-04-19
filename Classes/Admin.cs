@@ -19,7 +19,10 @@ namespace Hospital_Managment_System_OOP
             this.UserName= UserName;
             this.password= Password;
         }
-
+        public Admin() : base("", "", "", "")
+        {
+         
+        }
         public override void Register()
         {
             string[] lines = File.ReadAllLines("AdminData.txt");
@@ -57,6 +60,37 @@ namespace Hospital_Managment_System_OOP
 
             return false;
         }
+        public void AddBeds()
+        {
+            string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
+
+            string lastLine = lines[lines.Length-1];
+            string[] parts = lastLine.Split(',');
+            string lastBedNumber= parts[1];
+
+            int newBedNumber = int.Parse(lastBedNumber)+1;
+
+            lines[lines.Length - 1] = $"{parts[0]},{newBedNumber}";
+
+            File.WriteAllLines("PatientPassAndBeds.txt", lines);
+
+        }
+        public void RemoveBeds()
+        {
+            string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
+
+            string lastLine = lines[lines.Length - 1];
+            string[] parts = lastLine.Split(',');
+            string lastBedNumber = parts[1];
+
+            int newBedNumber = int.Parse(lastBedNumber) - 1;
+
+            lines[lines.Length - 1] = $"{parts[0]},{newBedNumber}";
+
+            File.WriteAllLines("PatientPassAndBeds.txt", lines);
+
+        }
     }
     
+
 }
