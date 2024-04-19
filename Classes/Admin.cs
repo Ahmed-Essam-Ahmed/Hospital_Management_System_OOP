@@ -88,7 +88,6 @@ namespace Hospital_Managment_System_OOP
             lines[lines.Length - 1] = $"{parts[0]},{newBedNumber}";
 
             File.WriteAllLines("PatientPassAndBeds.txt", lines);
-            MessageBox.Show("test");
 
         }
     }

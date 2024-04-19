@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hospital_Managment_System_OOP
-build_property.ProjectDir = C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\
+build_property.ProjectDir = D:\OOP_PROJECT\Hospital_Management_System_OOP\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
