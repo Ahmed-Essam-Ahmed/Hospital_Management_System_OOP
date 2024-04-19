@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\admin_delete_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:admin_delete_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\admin_delete_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:admin_delete_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:classes\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\admin_delete_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:admin_delete_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\register_page.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -35,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:front_desk_adding_patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|d:\\oop_project\\hospital_management_system_oop\\classes\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\classes\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{531B99AB-2DAF-4585-83DD-855DBA2771B0}|Hospital_Managment_System_OOP.csproj|solutionrelative:classes\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -62,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -74,8 +74,7 @@
               "RelativeToolTip": "Login_Page.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-31T22:57:01.536Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -88,8 +87,7 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAD8AAABRAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T14:10:24.884Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -101,8 +99,7 @@
               "RelativeToolTip": "Register_Page.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T11:40:24.395Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -115,12 +112,11 @@
               "ViewState": "AQIAABoAAAAAAAAAAAA9wCcAAABaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T11:41:43.255Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Admin.cs",
               "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Classes\\Admin.cs",
               "RelativeDocumentMoniker": "Classes\\Admin.cs",
@@ -129,25 +125,24 @@
               "ViewState": "AQIAAAUAAAAAAAAAAAAswA0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T17:11:30.661Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Admin_Delete_Patient.cs",
               "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Admin_Delete_Patient.cs",
               "RelativeDocumentMoniker": "Admin_Delete_Patient.cs",
               "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Admin_Delete_Patient.cs",
               "RelativeToolTip": "Admin_Delete_Patient.cs",
-              "ViewState": "AQIAAFIAAAAAAAAAAAAQwG0AAAAAAAAA",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAAG0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T22:00:40.503Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Admin_Delete_Patient.cs [Design]",
               "DocumentMoniker": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Admin_Delete_Patient.cs",
               "RelativeDocumentMoniker": "Admin_Delete_Patient.cs",
@@ -166,8 +161,7 @@
               "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Admin_Dashboard.cs [Design]",
               "RelativeToolTip": "Admin_Dashboard.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T17:31:28.43Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-19T17:31:28.43Z"
             },
             {
               "$type": "Document",
@@ -179,8 +173,7 @@
               "RelativeToolTip": "Front_Desk_Adding_Patient.cs",
               "ViewState": "AQIAADUAAAAAAAAAAAAowEAAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T17:25:33.099Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T17:25:33.099Z"
             },
             {
               "$type": "Document",
@@ -191,8 +184,7 @@
               "ToolTip": "D:\\OOP_PROJECT\\Hospital_Management_System_OOP\\Front_Desk_Adding_Patient.cs [Design]",
               "RelativeToolTip": "Front_Desk_Adding_Patient.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T17:25:31.338Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-19T17:25:31.338Z"
             },
             {
               "$type": "Document",
@@ -216,8 +208,7 @@
               "RelativeToolTip": "Classes\\Patient.cs",
               "ViewState": "AQIAABkAAAAAAAAAAAAgwDcAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-19T17:11:33.225Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-19T17:11:33.225Z"
             },
             {
               "$type": "Document",
