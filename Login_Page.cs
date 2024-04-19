@@ -48,19 +48,62 @@ namespace Hospital_Managment_System_OOP
                 }
                 else if (selectedItem == "Front Desk")
                 {
+                    {
+                        string username = bxUserName.Text;
+                        string password = bxPassword.Text;
 
+                        // Read usernames and passwords from the text file
+                        string[] lines = File.ReadAllLines("Front_DeskData.txt");
+
+                        foreach (string line in lines)
+                        {
+                            string[] parts = line.Split(',');
+                            if (parts[2] == username && parts[3] == password)
+                            {
+                                MessageBox.Show("Login Successful!");
+                                Front_Desk_Dashboard frontdesk = new Front_Desk_Dashboard();
+                                this.Hide();
+                                frontdesk.Show();
+                                return;
+                            }
+                        }
+
+                        MessageBox.Show("Invalid username or password.");
+                    }
                 }
 
                 else if (selectedItem == "Patient")
                 {
+                    {
+                        string username = bxUserName.Text;
+                        string password = bxPassword.Text;
 
-                }
-                else
-                {
+                        // Read usernames and passwords from the text file
+                        string[] lines = File.ReadAllLines("PatientData.txt");
 
+                        foreach (string line in lines)
+                        {
+                            string[] parts = line.Split(',');
+                            if (parts[9] == username && parts[10] == password)
+                            {
+                                MessageBox.Show("Login Successful!");
+                                Patient_Dashboard patient = new Patient_Dashboard();
+                                this.Hide();
+                                patient.Show();
+                                return;
+                            }
+                        }
+
+                        MessageBox.Show("Invalid username or password.");
+                    }
                 }
+                
             }
-        
+            else
+            {
+                MessageBox.Show("Please enter a role");
+            }
+
             //this.Hide();
             ////Admin_Dashboard admin =new Admin_Dashboard();
             ////admin.Show();

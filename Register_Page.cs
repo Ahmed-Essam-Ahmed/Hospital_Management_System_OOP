@@ -44,10 +44,28 @@ namespace Hospital_Managment_System_OOP
                     }
 
                     MessageBox.Show("Registration Successful!");
+                    this.Hide();
+                    Login_Page login_Page = new Login_Page();
+                    login_Page.Show();
+
                 }
                 else if (selectedItem == "Front Desk")
                 {
-                   
+                    string firstName = bxFirstName.Text;
+                    string lastName = bxLastName.Text;
+                    string username = bxUserName.Text;
+                    string password = bxPassword.Text;
+
+                    // Write user information to a text file
+                    using (StreamWriter writer = new StreamWriter("Front_DeskData.txt", true))
+                    {
+                        writer.WriteLine($"{firstName},{lastName},{username},{password}");
+                    }
+
+                    MessageBox.Show("Registration Successful!");
+                    this.Hide();
+                    Login_Page login_Page = new Login_Page();
+                    login_Page.Show();
                 }
                 
                 else

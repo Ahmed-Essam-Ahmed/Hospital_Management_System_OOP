@@ -18,5 +18,9 @@ namespace Hospital_Managment_System_OOP
             this.UserName = UserName;
             this.password = password;
         }
+
+        
+            
+        
     }
 }
