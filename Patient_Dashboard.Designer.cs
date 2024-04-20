@@ -28,27 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblName = new Label();
             btnUpdate = new Button();
             btnFollowUp = new Button();
             btnBack = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblName
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(68, 42);
-            label1.Name = "label1";
-            label1.Size = new Size(281, 45);
-            label1.TabIndex = 0;
-            label1.Text = "Patient Dashboard";
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblName.Location = new Point(78, 56);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(350, 54);
+            lblName.TabIndex = 0;
+            lblName.Text = "Patient Dashboard";
             // 
             // btnUpdate
             // 
-            btnUpdate.Location = new Point(100, 156);
+            btnUpdate.Location = new Point(114, 208);
+            btnUpdate.Margin = new Padding(3, 4, 3, 4);
             btnUpdate.Name = "btnUpdate";
-            btnUpdate.Size = new Size(115, 23);
+            btnUpdate.Size = new Size(131, 31);
             btnUpdate.TabIndex = 1;
             btnUpdate.Text = "Update Info";
             btnUpdate.UseVisualStyleBackColor = true;
@@ -56,9 +57,10 @@
             // 
             // btnFollowUp
             // 
-            btnFollowUp.Location = new Point(100, 224);
+            btnFollowUp.Location = new Point(114, 299);
+            btnFollowUp.Margin = new Padding(3, 4, 3, 4);
             btnFollowUp.Name = "btnFollowUp";
-            btnFollowUp.Size = new Size(115, 23);
+            btnFollowUp.Size = new Size(131, 31);
             btnFollowUp.TabIndex = 2;
             btnFollowUp.Text = "Follow -Up ";
             btnFollowUp.UseVisualStyleBackColor = true;
@@ -66,9 +68,10 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(12, 415);
+            btnBack.Location = new Point(14, 553);
+            btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(75, 23);
+            btnBack.Size = new Size(86, 31);
             btnBack.TabIndex = 3;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -76,13 +79,14 @@
             // 
             // Patient_Dashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnBack);
             Controls.Add(btnFollowUp);
             Controls.Add(btnUpdate);
-            Controls.Add(label1);
+            Controls.Add(lblName);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Patient_Dashboard";
             Text = "Patient_Dashboard";
             Load += Patient_Dashboard_Load;
@@ -92,7 +96,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblName;
         private Button btnUpdate;
         private Button btnFollowUp;
         private Button btnBack;

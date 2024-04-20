@@ -28,26 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            lblName = new Label();
             btnAdd = new Button();
             btnBack = new Button();
             SuspendLayout();
             // 
-            // label1
+            // lblName
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(60, 44);
-            label1.Name = "label1";
-            label1.Size = new Size(336, 45);
-            label1.TabIndex = 0;
-            label1.Text = "Front Desk Dashboard";
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblName.Location = new Point(69, 59);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(418, 54);
+            lblName.TabIndex = 0;
+            lblName.Text = "Front Desk Dashboard";
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(89, 191);
+            btnAdd.Location = new Point(102, 255);
+            btnAdd.Margin = new Padding(3, 4, 3, 4);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(167, 23);
+            btnAdd.Size = new Size(191, 31);
             btnAdd.TabIndex = 1;
             btnAdd.Text = "Add a New Patient";
             btnAdd.UseVisualStyleBackColor = true;
@@ -55,9 +56,10 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(12, 415);
+            btnBack.Location = new Point(14, 553);
+            btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(75, 23);
+            btnBack.Size = new Size(86, 31);
             btnBack.TabIndex = 3;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -65,12 +67,13 @@
             // 
             // Front_Desk_Dashboard
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(btnBack);
             Controls.Add(btnAdd);
-            Controls.Add(label1);
+            Controls.Add(lblName);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Front_Desk_Dashboard";
             Text = "Front_Desk_Dashboard";
             Load += Front_Desk_Dashboard_Load;
@@ -80,7 +83,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label lblName;
         private Button btnAdd;
         private Button btnBack;
     }

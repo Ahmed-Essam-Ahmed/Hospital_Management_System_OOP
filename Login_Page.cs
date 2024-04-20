@@ -32,6 +32,7 @@ namespace Hospital_Managment_System_OOP
                         {
                             MessageBox.Show("Login Successful!");
                             Admin_Dashboard admin = new Admin_Dashboard();
+                            CurrentUser.UserName = username;
                             this.Hide();
                             admin.Show();
 
@@ -55,6 +56,7 @@ namespace Hospital_Managment_System_OOP
                             {
                                 MessageBox.Show("Login Successful!");
                                 Front_Desk_Dashboard frontdesk = new Front_Desk_Dashboard();
+                                CurrentUser.UserName=username;
                                 this.Hide();
                                 frontdesk.Show();
                                 return;
@@ -82,6 +84,7 @@ namespace Hospital_Managment_System_OOP
                                 MessageBox.Show("Login Successful!");
                                 
                                 Patient_Dashboard patient = new Patient_Dashboard();
+                                CurrentUser.Password=password;
                                 this.Hide();
                                 patient.Show();
                                 return;

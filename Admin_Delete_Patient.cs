@@ -34,7 +34,7 @@ namespace Hospital_Managment_System_OOP
 
         private void label2_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         private void Admin_Delete_Patient_Load(object sender, EventArgs e)

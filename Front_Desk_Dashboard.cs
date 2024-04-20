@@ -19,7 +19,18 @@ namespace Hospital_Managment_System_OOP
 
         private void Front_Desk_Dashboard_Load(object sender, EventArgs e)
         {
+            string[] lines = File.ReadAllLines("Front_DeskData.txt");
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(',');
+                if (parts[2] == CurrentUser.UserName)
+                {
+                    CurrentUser.FirstName = parts[0];
+                    CurrentUser.LastName = parts[1];
+                    lblName.Text = ($"Welcome  {parts[0] + ' ' + parts[1]}");
 
+                }
+            }
         }
 
         private void btnBack_Click(object sender, EventArgs e)

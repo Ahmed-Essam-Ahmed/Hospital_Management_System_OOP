@@ -31,8 +31,7 @@
             btnBack = new Button();
             btnDelete_Patient = new Button();
             button3 = new Button();
-            label1 = new Label();
-            label3 = new Label();
+            lblName = new Label();
             SuspendLayout();
             // 
             // btnBack
@@ -69,25 +68,16 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
-            // label1
+            // lblName
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(113, 45);
-            label1.Name = "label1";
-            label1.Size = new Size(344, 54);
-            label1.TabIndex = 9;
-            label1.Text = "Admin Dashboard";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(624, 124);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 11;
-            label3.Text = "label3";
-            label3.Click += label3_Click;
+            lblName.AutoSize = true;
+            lblName.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblName.Location = new Point(101, 71);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(130, 54);
+            lblName.TabIndex = 11;
+            lblName.Text = "label3";
+            lblName.Click += label3_Click;
             // 
             // Admin_Dashboard
             // 
@@ -95,8 +85,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(914, 600);
-            Controls.Add(label3);
-            Controls.Add(label1);
+            Controls.Add(lblName);
             Controls.Add(button3);
             Controls.Add(btnDelete_Patient);
             Controls.Add(btnBack);
@@ -113,7 +102,6 @@
         private Button btnBack;
         private Button btnDelete_Patient;
         private Button button3;
-        private Label label1;
-        private Label label3;
+        private Label lblName;
     }
 }

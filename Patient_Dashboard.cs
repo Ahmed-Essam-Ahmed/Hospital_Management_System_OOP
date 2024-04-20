@@ -16,11 +16,25 @@ namespace Hospital_Managment_System_OOP
         {
             InitializeComponent();
         }
-            
+
         private void Patient_Dashboard_Load(object sender, EventArgs e)
         {
-        }
+            string[] lines = File.ReadAllLines("PatientData.txt");
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(',');
+                if (parts[11] == CurrentUser.Password)
+                {
+                    CurrentUser.FirstName = parts[0];
+                    CurrentUser.LastName = parts[1];
+                    
 
+                    lblName.Text = ($"Welcome  {parts[0] + ' ' + parts[1]}");
+                 
+
+                }
+            }
+        }
         private void btnBack_Click(object sender, EventArgs e)
         {
             this.Hide();

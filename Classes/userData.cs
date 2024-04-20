@@ -6,7 +6,7 @@ namespace Hospital_Managment_System_OOP
 {
     internal abstract class UserData
     {
-        protected string firstName;
+        protected string firstName ;
         protected string lastName;
         protected string UserName;
         protected string password;
