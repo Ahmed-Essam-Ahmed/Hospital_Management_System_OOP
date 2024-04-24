@@ -78,7 +78,7 @@ namespace Hospital_Managment_System_OOP
 
                         foreach (string line in lines)
                         {
-                            string[] parts = line.Split(',');
+                            string[] parts = line.Split('|');
                             if (parts[10] == username && parts[11] == password)
                             {
                                 MessageBox.Show("Login Successful!");

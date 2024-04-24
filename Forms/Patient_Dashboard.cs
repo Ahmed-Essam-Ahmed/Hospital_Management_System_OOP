@@ -22,7 +22,7 @@ namespace Hospital_Managment_System_OOP
             string[] lines = File.ReadAllLines("PatientData.txt");
             foreach (string line in lines)
             {
-                string[] parts = line.Split(',');
+                string[] parts = line.Split('|');
                 if (parts[11] == CurrentUser.Password)
                 {
                     CurrentUser.FirstName = parts[0];

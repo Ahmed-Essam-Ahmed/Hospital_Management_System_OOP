@@ -261,3 +261,4 @@ C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Manageme
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Admin_AddBeds.resources
 D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Patient_Update.resources
 C:\Users\legion\OneDrive\Desktop\Hospital_Managment_System_OOP\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Admin_All_Users.resources
+D:\OOP_PROJECT\Hospital_Management_System_OOP\obj\Debug\net8.0-windows\Hospital_Managment_System_OOP.Admin_All_Users.resources

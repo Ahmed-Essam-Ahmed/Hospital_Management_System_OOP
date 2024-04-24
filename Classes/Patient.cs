@@ -38,12 +38,12 @@ namespace Hospital_Managment_System_OOP
             string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
 
             string lastLine = lines[lines.Length - 1];
-            string[] parts = lastLine.Split(',');
+            string[] parts = lastLine.Split('|');
             string lastPassword = parts[0];
 
             int newPassword = int.Parse(lastPassword) + 1;
 
-            lines[lines.Length - 1] = $"{newPassword},{parts[1]}";
+            lines[lines.Length - 1] = $"{newPassword}|{parts[1]}";
 
             File.WriteAllLines("PatientPassAndBeds.txt", lines);
 
@@ -83,7 +83,7 @@ namespace Hospital_Managment_System_OOP
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    string[] parts = line.Split(',');
+                    string[] parts = line.Split('|');
 
                     string firstName = parts[0];
                     string lastName = parts[1];

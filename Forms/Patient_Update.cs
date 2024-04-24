@@ -52,7 +52,7 @@ namespace Hospital_Managment_System_OOP
             string[] lines = File.ReadAllLines("PatientData.txt");
             foreach (string line in lines)
             {
-                string[] parts = line.Split(',');
+                string[] parts = line.Split('|');
                 if (parts[11] == CurrentUser.Password)
                 {
                     CurrentUser.FirstName = parts[0];
@@ -108,7 +108,7 @@ namespace Hospital_Managment_System_OOP
                 string[] lines = File.ReadAllLines("PatientData.txt");
 
                 string lastLine = lines[lines.Length - 1];
-                string[] parts = lastLine.Split(',');
+                string[] parts = lastLine.Split('|');
                 parts[0] = bxFirst.Text;
                 parts[1] = bxLast.Text;
                 parts[2] = bxPhone.Text;
@@ -122,12 +122,21 @@ namespace Hospital_Managment_System_OOP
                 parts[10] = bxUserName.Text;
                 parts[11] = bxPassword.Text;
 
+                if (!IsValidName(parts[0]) || !IsValidName(parts[1]) || !IsValidName(parts[8]))
+                {
+                    MessageBox.Show("Invalid first name, last name, or city!");
+                    return;
+                }
+                if (!IsValidNumber(parts[2]) || !IsValidNumber(parts[3]) || !IsValidNumber(parts[4]) || !IsValidNumber(parts[5]))
+                {
+                    MessageBox.Show("Invalid phone number, age, PHN, or postal code!");
+                    return;
+                }
 
 
-
-                lines[lines.Length - 1] = $"{parts[0]},{parts[1]},{parts[2]}," +
-                    $"{parts[3]},{parts[4]},{parts[5]},{parts[6]},{parts[7]}," +
-                    $"{parts[8]},{parts[9]},{parts[10]},{parts[11]}";
+                lines[lines.Length - 1] = $"{parts[0]}|{parts[1]}|{parts[2]}|" +
+                    $"{parts[3]}|{parts[4]}|{parts[5]}|{parts[6]}|{parts[7]}|" +
+                    $"{parts[8]}|{parts[9]}|{parts[10]}|{parts[11]}";
 
                 File.WriteAllLines("PatientData.txt", lines);
                 MessageBox.Show("Info Updated Successfully");
@@ -146,6 +155,26 @@ namespace Hospital_Managment_System_OOP
             this.Hide();
             Login_Page login_Page = new Login_Page();
             login_Page.Show();
+        }
+
+        private bool IsValidName(string name)
+        {
+            foreach (char c in name)
+            {
+                if (!((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == ' '))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private bool IsValidNumber(string number)
+        {
+            foreach (char c in number)
+                if (!char.IsDigit(c))
+                    return false;
+            return true;
         }
     }
 }

@@ -50,7 +50,7 @@ namespace Hospital_Managment_System_OOP
             string[] lines = File.ReadAllLines("AdminData.txt");
             foreach (string line in lines)
             {
-                string[] parts = line.Split(',');
+                string[] parts = line.Split('|');
                 if (parts[2] == CurrentUser.UserName)
                 {
                     CurrentUser.FirstName = parts[0];

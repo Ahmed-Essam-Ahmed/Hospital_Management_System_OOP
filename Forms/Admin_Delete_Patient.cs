@@ -51,7 +51,7 @@ namespace Hospital_Managment_System_OOP
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    string[] parts = line.Split(',');
+                    string[] parts = line.Split('|');
 
                     string username = parts[10];
                     string password = parts[11];
@@ -75,7 +75,7 @@ namespace Hospital_Managment_System_OOP
                 foreach (string line in lines)
                 {
                     // Split the line by comma and get the password (assuming it's at index 11)
-                    string[] parts = line.Split(',');
+                    string[] parts = line.Split('|');
 
                     string password = parts[11].Trim();
 
@@ -113,7 +113,7 @@ namespace Hospital_Managment_System_OOP
                 string line;
                 while ((line = sr.ReadLine()) != null)
                 {
-                    string[] parts = line.Split(',');
+                    string[] parts = line.Split('|');
 
                     string username = parts[10];
                     string password = parts[11];

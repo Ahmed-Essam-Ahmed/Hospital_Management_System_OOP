@@ -1,4 +1,1 @@
-first,last,44444,18,777,2222,Belarus,666,000,Chickenpox,first_last,1010
-Ali,Ahmed,01054578953,22,19991,123432,Australia,palm hills,cairo,Chickenpox,Ali_Ahmed,1016
-Omar,Ali,0,0,0,0,Kazakhstan,2werew,cairo,Monkeypox,Omar_Ali,1018
-Omar,Ali,0,0,0,0,jjj,2werew,cairo,Monkeypox,Omar_Ali,1018
+asdasd|dasdasd|1212|2323|13213|31441|Albania|asdads|asdsad|Common cold|cold|asdasd_dasdasd||1025

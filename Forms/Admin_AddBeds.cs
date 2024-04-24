@@ -20,7 +20,7 @@ namespace Hospital_Managment_System_OOP
                 string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
 
                 string lastLine = lines[lines.Length - 1];
-                string[] parts = lastLine.Split(',');
+                string[] parts = lastLine.Split('|');
                 string currentBeds = parts[1];
                 lblBedsAvailable.Text = currentBeds;
 
@@ -44,7 +44,7 @@ namespace Hospital_Managment_System_OOP
             string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
 
             string lastLine = lines[lines.Length - 1];
-            string[] parts = lastLine.Split(',');
+            string[] parts = lastLine.Split('|');
             string currentBeds = parts[1];
             lblBedsAvailable.Text = currentBeds;
 
@@ -60,7 +60,7 @@ namespace Hospital_Managment_System_OOP
                 string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
 
                 string lastLine = lines[lines.Length - 1];
-                string[] parts = lastLine.Split(',');
+                string[] parts = lastLine.Split('|');
                 string currentBeds = parts[1];
                 lblBedsAvailable.Text = currentBeds;
                 button2.Enabled = false;
@@ -73,7 +73,7 @@ namespace Hospital_Managment_System_OOP
                 string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
 
                 string lastLine = lines[lines.Length - 1];
-                string[] parts = lastLine.Split(',');
+                string[] parts = lastLine.Split('|');
                 string currentBeds = parts[1];
                 lblBedsAvailable.Text = currentBeds;
 

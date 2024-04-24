@@ -78,17 +78,26 @@ namespace Hospital_Managment_System_OOP
                 //string country = bxCountry.SelectedItem.ToString();
                 //string disease = bxDisease.SelectedItem.ToString();
 
+                if(!IsValidName(firstName) || !IsValidName(lastName) || !IsValidName(city))
+                {
+                    MessageBox.Show("Invalid first name, last name, or city!");
+                    return;
+                }
+                if (!IsValidNumber(phoneNum) || !IsValidNumber(age) || !IsValidNumber(PHN) || !IsValidNumber(postal))
+                {
+                    MessageBox.Show("Invalid phone number, age, PHN, or postal code!");
+                    return;
+                }
 
-
-                Patient currentPatient = new Patient(firstName, lastName, age, phoneNum, PHN,
+                    Patient currentPatient = new Patient(firstName, lastName, age, phoneNum, PHN,
                     postal, country, address, city, firstName + lastName, password);
 
                 string assignedPassword = currentPatient.generatePatientPassword();
 
                 using (StreamWriter writer = new StreamWriter("PatientData.txt", true))
 
-                    writer.WriteLine($"{firstName},{lastName},{phoneNum},{age},{PHN},{postal},{country},{address}," +
-                        $"{city},{disease},{firstName + '_' + lastName},{assignedPassword}");
+                    writer.WriteLine($"{firstName}|{lastName}|{phoneNum}|{age}|{PHN}|{postal}|{country}|{address}|" +
+                        $"{city}|{disease}|{firstName + '_' + lastName}|{assignedPassword}");
 
 
                 MessageBox.Show($"Registration Successful!\nUsername:{firstName + '_' + lastName} \nPassword:{assignedPassword}");
@@ -103,13 +112,32 @@ namespace Hospital_Managment_System_OOP
                 bxPostal.Text = string.Empty;
                 bxDisease.Text = string.Empty;
             }
-            
-
         }
 
         private void label7_Click_1(object sender, EventArgs e)
         {
 
         }
+
+        private bool IsValidName(string name)
+        {
+            foreach (char c in name)
+            {
+                if (!((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z') || c == ' '))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        private bool IsValidNumber(string number)
+        {
+            foreach (char c in number)
+                if (!char.IsDigit(c))
+                    return false;
+            return true;
+        }
+
     }
 }
