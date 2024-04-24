@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Admin_All_Users.cs">
+    <Compile Update="Forms\Admin_All_Users.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Forms\Admin_AddBeds.cs">

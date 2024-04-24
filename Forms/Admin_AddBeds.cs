@@ -30,11 +30,15 @@ namespace Hospital_Managment_System_OOP
 
         private void Admin_AddBeds_Load(object sender, EventArgs e)
         {
-
+            
+             
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            button2.Enabled = true;
             Admin currentAdmin = new Admin();
             currentAdmin.AddBeds();
             string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
@@ -49,14 +53,33 @@ namespace Hospital_Managment_System_OOP
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Admin currentAdmin = new Admin();
-            currentAdmin.RemoveBeds();
-            string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
+            if (int.Parse(lblBedsAvailable.Text) == 1)
+            {
+                Admin currentAdmin = new Admin();
+                currentAdmin.RemoveBeds();
+                string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
 
-            string lastLine = lines[lines.Length - 1];
-            string[] parts = lastLine.Split(',');
-            string currentBeds = parts[1];
-            lblBedsAvailable.Text = currentBeds;
+                string lastLine = lines[lines.Length - 1];
+                string[] parts = lastLine.Split(',');
+                string currentBeds = parts[1];
+                lblBedsAvailable.Text = currentBeds;
+                button2.Enabled = false;
+            }
+            else 
+            {
+
+                Admin currentAdmin = new Admin();
+                currentAdmin.RemoveBeds();
+                string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
+
+                string lastLine = lines[lines.Length - 1];
+                string[] parts = lastLine.Split(',');
+                string currentBeds = parts[1];
+                lblBedsAvailable.Text = currentBeds;
+
+
+            }
+           
         }
 
         private void btnBack_Click(object sender, EventArgs e)

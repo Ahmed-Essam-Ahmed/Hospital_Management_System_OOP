@@ -63,7 +63,6 @@ namespace Hospital_Managment_System_OOP
                     string lastName = bxLastName.Text;
                     string username = bxUserName.Text;
                     string password = bxPassword.Text;
-
                     FrontDesk currentFrontDesk = new FrontDesk(firstName, lastName, username, password);
                     currentFrontDesk.Register();
 

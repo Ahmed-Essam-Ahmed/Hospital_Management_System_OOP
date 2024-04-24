@@ -26,6 +26,7 @@ namespace Hospital_Managment_System_OOP
         }
         public override void Register()
         {
+
             string[] lines = File.ReadAllLines("AdminData.txt");
             foreach (string line in lines)
             {

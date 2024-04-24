@@ -1,4 +1,4 @@
 first,last,44444,18,777,2222,Belarus,666,000,Chickenpox,first_last,1010
 Ali,Ahmed,01054578953,22,19991,123432,Australia,palm hills,cairo,Chickenpox,Ali_Ahmed,1016
 Omar,Ali,0,0,0,0,Kazakhstan,2werew,cairo,Monkeypox,Omar_Ali,1018
-firstName,lastName,PhoneNum,Age,PHN,PostalCode,Egypt,Address,City,Chickenpox,firstName_lastName,1019
+Omar,Ali,0,0,0,0,jjj,2werew,cairo,Monkeypox,Omar_Ali,1018
