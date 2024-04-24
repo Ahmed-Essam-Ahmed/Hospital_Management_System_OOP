@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,8 +27,18 @@ namespace Hospital_Managment_System_OOP
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if (bxRole.SelectedItem != null)
+            if (string.IsNullOrEmpty(bxRole.Text) || string.IsNullOrEmpty(bxFirstName.Text) ||
+                string.IsNullOrEmpty(bxLastName.Text) || string.IsNullOrEmpty(bxUserName.Text) || string.IsNullOrEmpty(bxPassword.Text))
             {
+
+
+                MessageBox.Show("Complete All Fields!");
+            }
+           
+            else
+            {
+
+
                 string selectedItem = bxRole.SelectedItem.ToString();
 
                 if (selectedItem == "Admin")
@@ -36,11 +47,11 @@ namespace Hospital_Managment_System_OOP
                     string lastName = bxLastName.Text;
                     string username = bxUserName.Text;
                     string password = bxPassword.Text;
-                    
-                    Admin currentAdmin=new Admin(firstName, lastName, username, password);
+
+                    Admin currentAdmin = new Admin(firstName, lastName, username, password);
                     currentAdmin.Register();
 
-                   
+
                     this.Hide();
                     Login_Page login_Page = new Login_Page();
                     login_Page.Show();
@@ -61,10 +72,8 @@ namespace Hospital_Managment_System_OOP
                     login_Page.Show();
                 }
 
-                else
-                {
-                    MessageBox.Show("Choose Role");
-                }
+
+
             }
         }
 
@@ -73,6 +82,11 @@ namespace Hospital_Managment_System_OOP
             this.Hide();
             Login_Page Login_Page = new Login_Page();
             Login_Page.Show();
+
+        }
+
+        private void bxPassword_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

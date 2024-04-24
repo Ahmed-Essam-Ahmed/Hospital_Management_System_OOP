@@ -33,6 +33,8 @@
             button2 = new Button();
             label3 = new Label();
             button1 = new Button();
+            btnHome = new Button();
+            btnBack = new Button();
             SuspendLayout();
             // 
             // label1
@@ -83,11 +85,33 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // btnHome
+            // 
+            btnHome.Location = new Point(598, 409);
+            btnHome.Name = "btnHome";
+            btnHome.Size = new Size(190, 29);
+            btnHome.TabIndex = 6;
+            btnHome.Text = "Log Out";
+            btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += btnHome_Click;
+            // 
+            // btnBack
+            // 
+            btnBack.Location = new Point(12, 409);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(94, 29);
+            btnBack.TabIndex = 7;
+            btnBack.Text = "Homepage";
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
+            // 
             // Admin_AddBeds
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnBack);
+            Controls.Add(btnHome);
             Controls.Add(button1);
             Controls.Add(label3);
             Controls.Add(button2);
@@ -107,5 +131,7 @@
         private Button button2;
         private Label label3;
         private Button button1;
+        private Button btnHome;
+        private Button btnBack;
     }
 }

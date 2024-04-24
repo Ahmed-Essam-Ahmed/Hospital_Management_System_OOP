@@ -93,34 +93,59 @@ namespace Hospital_Managment_System_OOP
 
         private void btnDone_Click(object sender, EventArgs e)
         {
-            string[] lines = File.ReadAllLines("PatientData.txt");
-
-            string lastLine = lines[lines.Length - 1];
-            string[] parts = lastLine.Split(',');
-            parts[0]=bxFirst.Text;
-            parts[1]=bxLast.Text;
-            parts[2] = bxPhone.Text; 
-            parts[3]=bxAge.Text;
-            parts[4]=bxPHN.Text;
-            parts[5]=bxPostal.Text;
-            parts[6]=bxCountry.Text;
-            parts[7]=bxAddress.Text;
-            parts[8] = bxCity.Text;
-            parts[9] = bxDisease.Text;
-            parts[10] = bxUserName.Text;
-            parts[11] = bxPassword.Text;
+            if (string.IsNullOrEmpty(bxFirst.Text) || string.IsNullOrEmpty(bxLast.Text) ||
+                string.IsNullOrEmpty(bxPhone.Text) || string.IsNullOrEmpty(bxAge.Text) ||
+                string.IsNullOrEmpty(bxPHN.Text) || string.IsNullOrEmpty(bxPostal.Text) ||
+                string.IsNullOrEmpty(bxCountry.Text) || string.IsNullOrEmpty(bxAddress.Text) ||
+                string.IsNullOrEmpty(bxCity.Text) || string.IsNullOrEmpty(bxDisease.Text))
+            {
+                MessageBox.Show("Complete All Fields!");
+            }
+            else
+            {
 
 
+                string[] lines = File.ReadAllLines("PatientData.txt");
 
-      
-            lines[lines.Length - 1] = $"{parts[0]},{parts[1]},{parts[2]}," +
-                $"{parts[3]},{parts[4]},{parts[5]},{parts[6]},{parts[7]}," +
-                $"{parts[8]},{parts[9]},{parts[10]},{parts[11]}";
+                string lastLine = lines[lines.Length - 1];
+                string[] parts = lastLine.Split(',');
+                parts[0] = bxFirst.Text;
+                parts[1] = bxLast.Text;
+                parts[2] = bxPhone.Text;
+                parts[3] = bxAge.Text;
+                parts[4] = bxPHN.Text;
+                parts[5] = bxPostal.Text;
+                parts[6] = bxCountry.Text;
+                parts[7] = bxAddress.Text;
+                parts[8] = bxCity.Text;
+                parts[9] = bxDisease.Text;
+                parts[10] = bxUserName.Text;
+                parts[11] = bxPassword.Text;
 
-            File.WriteAllLines("PatientData.txt", lines);
-            MessageBox.Show("Info Updated Successfully");
 
+
+
+                lines[lines.Length - 1] = $"{parts[0]},{parts[1]},{parts[2]}," +
+                    $"{parts[3]},{parts[4]},{parts[5]},{parts[6]},{parts[7]}," +
+                    $"{parts[8]},{parts[9]},{parts[10]},{parts[11]}";
+
+                File.WriteAllLines("PatientData.txt", lines);
+                MessageBox.Show("Info Updated Successfully");
+            }
         }
-       
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Patient_Dashboard patient_Dashboard = new Patient_Dashboard();
+            patient_Dashboard.Show();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login_Page login_Page = new Login_Page();
+            login_Page.Show();
+        }
     }
 }

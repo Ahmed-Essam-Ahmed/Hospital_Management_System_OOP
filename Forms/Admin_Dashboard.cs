@@ -60,5 +60,13 @@ namespace Hospital_Managment_System_OOP
                 }
             }
         }
+
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Admin_All_Users admin_All_Users = new Admin_All_Users();
+            admin_All_Users.Show();
+
+        }
     }
 }

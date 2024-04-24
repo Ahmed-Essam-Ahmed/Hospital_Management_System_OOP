@@ -1,0 +1,5 @@
+Chickenpox|Rash,Fever,Fatigue and Headache|Acetaminophen or ibuprofen for fever and discomfort|3 pills per day for 1 week
+Common cold|Runny or stuffy nose, Sneezing, and Cough|Zinc lozenges or supplements|1 pill per day for 5 days 
+COVID-19|Nausea or vomiting,Diarrhea, and Fever or chills|remdesivir|2 pills daily for 3 week
+Influenza|Muscle or body aches, and Runny or stuffy nose|oseltamivir|4 times per day for 1 week
+Monkeypox|Backache,Swollen lymph nodes, and Exhaustion|Tembexa|1 pill per week

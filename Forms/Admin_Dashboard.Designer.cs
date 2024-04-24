@@ -32,16 +32,17 @@
             btnDelete_Patient = new Button();
             button3 = new Button();
             lblName = new Label();
+            btnUsers = new Button();
             SuspendLayout();
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(9, 553);
+            btnBack.Location = new Point(747, 556);
             btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(86, 31);
+            btnBack.Size = new Size(155, 31);
             btnBack.TabIndex = 4;
-            btnBack.Text = "Back";
+            btnBack.Text = "Log Out";
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
@@ -51,7 +52,7 @@
             btnDelete_Patient.Location = new Point(101, 207);
             btnDelete_Patient.Margin = new Padding(3, 4, 3, 4);
             btnDelete_Patient.Name = "btnDelete_Patient";
-            btnDelete_Patient.Size = new Size(131, 33);
+            btnDelete_Patient.Size = new Size(222, 33);
             btnDelete_Patient.TabIndex = 5;
             btnDelete_Patient.Text = "Delete Patient ID";
             btnDelete_Patient.UseVisualStyleBackColor = true;
@@ -79,12 +80,23 @@
             lblName.Text = "label3";
             lblName.Click += label3_Click;
             // 
+            // btnUsers
+            // 
+            btnUsers.Location = new Point(101, 374);
+            btnUsers.Name = "btnUsers";
+            btnUsers.Size = new Size(222, 29);
+            btnUsers.TabIndex = 12;
+            btnUsers.Text = "All Users Info";
+            btnUsers.UseVisualStyleBackColor = true;
+            btnUsers.Click += btnUsers_Click;
+            // 
             // Admin_Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
             ClientSize = new Size(914, 600);
+            Controls.Add(btnUsers);
             Controls.Add(lblName);
             Controls.Add(button3);
             Controls.Add(btnDelete_Patient);
@@ -103,5 +115,6 @@
         private Button btnDelete_Patient;
         private Button button3;
         private Label lblName;
+        private Button btnUsers;
     }
 }

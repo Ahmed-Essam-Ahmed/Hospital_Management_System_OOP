@@ -146,19 +146,21 @@
             // 
             btnBack.Location = new Point(12, 409);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(94, 29);
+            btnBack.Size = new Size(128, 29);
             btnBack.TabIndex = 9;
-            btnBack.Text = "Back";
+            btnBack.Text = "Homepage";
             btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // btnHome
             // 
-            btnHome.Location = new Point(590, 409);
+            btnHome.Location = new Point(735, 409);
             btnHome.Name = "btnHome";
             btnHome.Size = new Size(198, 29);
             btnHome.TabIndex = 10;
-            btnHome.Text = "Return to Homepage";
+            btnHome.Text = "Log Out";
             btnHome.UseVisualStyleBackColor = true;
+            btnHome.Click += btnHome_Click;
             // 
             // bxPHN
             // 

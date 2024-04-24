@@ -42,34 +42,36 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(12, 9);
+            label1.Location = new Point(14, 12);
             label1.Name = "label1";
-            label1.Size = new Size(244, 45);
+            label1.Size = new Size(303, 54);
             label1.TabIndex = 0;
             label1.Text = "Delete a Patient";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(63, 299);
+            label2.Location = new Point(72, 399);
             label2.Name = "label2";
-            label2.Size = new Size(185, 15);
+            label2.Size = new Size(232, 20);
             label2.TabIndex = 1;
             label2.Text = "Patient to Delete(Using Password)";
             label2.Click += label2_Click;
             // 
             // bxDelete
             // 
-            bxDelete.Location = new Point(272, 296);
+            bxDelete.Location = new Point(311, 395);
+            bxDelete.Margin = new Padding(3, 4, 3, 4);
             bxDelete.Name = "bxDelete";
-            bxDelete.Size = new Size(100, 23);
+            bxDelete.Size = new Size(114, 27);
             bxDelete.TabIndex = 2;
             // 
             // button1
             // 
-            button1.Location = new Point(432, 296);
+            button1.Location = new Point(494, 395);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(86, 31);
             button1.TabIndex = 3;
             button1.Text = "Delete";
             button1.UseVisualStyleBackColor = true;
@@ -77,9 +79,10 @@
             // 
             // btnHomepage
             // 
-            btnHomepage.Location = new Point(616, 415);
+            btnHomepage.Location = new Point(704, 553);
+            btnHomepage.Margin = new Padding(3, 4, 3, 4);
             btnHomepage.Name = "btnHomepage";
-            btnHomepage.Size = new Size(172, 23);
+            btnHomepage.Size = new Size(197, 31);
             btnHomepage.TabIndex = 4;
             btnHomepage.Text = "Return to Homepage";
             btnHomepage.UseVisualStyleBackColor = true;
@@ -87,9 +90,10 @@
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(12, 415);
+            btnBack.Location = new Point(14, 553);
+            btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(75, 23);
+            btnBack.Size = new Size(86, 31);
             btnBack.TabIndex = 5;
             btnBack.Text = "Back";
             btnBack.UseVisualStyleBackColor = true;
@@ -98,16 +102,19 @@
             // TablePatient
             // 
             TablePatient.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            TablePatient.Location = new Point(99, 70);
+            TablePatient.Location = new Point(113, 93);
+            TablePatient.Margin = new Padding(3, 4, 3, 4);
             TablePatient.Name = "TablePatient";
-            TablePatient.Size = new Size(567, 196);
+            TablePatient.ReadOnly = true;
+            TablePatient.RowHeadersWidth = 51;
+            TablePatient.Size = new Size(648, 261);
             TablePatient.TabIndex = 6;
             // 
             // Admin_Delete_Patient
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(914, 600);
             Controls.Add(TablePatient);
             Controls.Add(btnBack);
             Controls.Add(btnHomepage);
@@ -115,6 +122,7 @@
             Controls.Add(bxDelete);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Admin_Delete_Patient";
             Text = "Admin_Delete_Patient";
             Load += Admin_Delete_Patient_Load;

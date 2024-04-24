@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -88,6 +89,33 @@ namespace Hospital_Managment_System_OOP
             lines[lines.Length - 1] = $"{parts[0]},{newBedNumber}";
 
             File.WriteAllLines("PatientPassAndBeds.txt", lines);
+
+        }
+        public override void AllUsersAccounts(DataGridView dataGridView)
+        {
+            DataTable table = new DataTable();
+            table.Columns.Add("First Name", typeof(string));
+            table.Columns.Add("Last Name", typeof(string));
+            table.Columns.Add("Username", typeof(string));
+            table.Columns.Add("Password", typeof(string));
+            dataGridView.DataSource = table;
+
+            string filePath = "AdminData.txt";
+
+            using (StreamReader sr = new StreamReader(filePath))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    string[] parts = line.Split(',');
+
+                    string firstName= parts[0];
+                    string lastName= parts[1];
+                    string username = parts[2];
+                    string password = parts[3];
+                    table.Rows.Add(firstName,lastName,username, password);
+                }
+            }
 
         }
     }

@@ -15,7 +15,7 @@ namespace Hospital_Managment_System_OOP
         public Admin_AddBeds()
         {
             InitializeComponent();
-           
+
             {
                 string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
 
@@ -57,6 +57,20 @@ namespace Hospital_Managment_System_OOP
             string[] parts = lastLine.Split(',');
             string currentBeds = parts[1];
             lblBedsAvailable.Text = currentBeds;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            Admin_Dashboard admin_Dashboard = new Admin_Dashboard();
+            this.Hide();
+            admin_Dashboard.Show();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login_Page login_Page = new Login_Page();
+            login_Page.Show();
         }
     }
 }

@@ -22,7 +22,10 @@ namespace Hospital_Managment_System_OOP
         public abstract void Register();
         public abstract bool Login();
         
+        public virtual void AllUsersAccounts(DataGridView dataGridView)
+        {
 
+        }
 
         
             

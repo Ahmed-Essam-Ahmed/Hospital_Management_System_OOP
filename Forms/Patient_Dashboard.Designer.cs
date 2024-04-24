@@ -1,6 +1,6 @@
 ﻿namespace Hospital_Managment_System_OOP
 {
-    partial class Front_Desk_Dashboard
+    partial class Patient_Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,8 @@
         private void InitializeComponent()
         {
             lblName = new Label();
-            btnAdd = new Button();
+            btnUpdate = new Button();
+            btnFollowUp = new Button();
             btnBack = new Button();
             SuspendLayout();
             // 
@@ -37,46 +38,58 @@
             // 
             lblName.AutoSize = true;
             lblName.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblName.Location = new Point(69, 59);
+            lblName.Location = new Point(78, 56);
             lblName.Name = "lblName";
-            lblName.Size = new Size(418, 54);
+            lblName.Size = new Size(350, 54);
             lblName.TabIndex = 0;
-            lblName.Text = "Front Desk Dashboard";
+            lblName.Text = "Patient Dashboard";
             // 
-            // btnAdd
+            // btnUpdate
             // 
-            btnAdd.Location = new Point(102, 255);
-            btnAdd.Margin = new Padding(3, 4, 3, 4);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(191, 31);
-            btnAdd.TabIndex = 1;
-            btnAdd.Text = "Add a New Patient";
-            btnAdd.UseVisualStyleBackColor = true;
-            btnAdd.Click += button1_Click;
+            btnUpdate.Location = new Point(114, 208);
+            btnUpdate.Margin = new Padding(3, 4, 3, 4);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(131, 31);
+            btnUpdate.TabIndex = 1;
+            btnUpdate.Text = "Update Info";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
+            // btnFollowUp
+            // 
+            btnFollowUp.Location = new Point(114, 299);
+            btnFollowUp.Margin = new Padding(3, 4, 3, 4);
+            btnFollowUp.Name = "btnFollowUp";
+            btnFollowUp.Size = new Size(131, 31);
+            btnFollowUp.TabIndex = 2;
+            btnFollowUp.Text = "Follow -Up ";
+            btnFollowUp.UseVisualStyleBackColor = true;
+            btnFollowUp.Click += button2_Click;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(14, 553);
+            btnBack.Location = new Point(770, 556);
             btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(86, 31);
+            btnBack.Size = new Size(132, 31);
             btnBack.TabIndex = 3;
-            btnBack.Text = "Back";
+            btnBack.Text = "Log Out";
             btnBack.UseVisualStyleBackColor = true;
             btnBack.Click += btnBack_Click;
             // 
-            // Front_Desk_Dashboard
+            // Patient_Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
             Controls.Add(btnBack);
-            Controls.Add(btnAdd);
+            Controls.Add(btnFollowUp);
+            Controls.Add(btnUpdate);
             Controls.Add(lblName);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Front_Desk_Dashboard";
-            Text = "Front_Desk_Dashboard";
-            Load += Front_Desk_Dashboard_Load;
+            Name = "Patient_Dashboard";
+            Text = "Patient_Dashboard";
+            Load += Patient_Dashboard_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -84,7 +97,8 @@
         #endregion
 
         private Label lblName;
-        private Button btnAdd;
+        private Button btnUpdate;
+        private Button btnFollowUp;
         private Button btnBack;
     }
 }
