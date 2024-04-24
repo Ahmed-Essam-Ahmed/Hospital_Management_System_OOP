@@ -47,6 +47,7 @@
             AdminGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             AdminGrid.Location = new Point(12, 148);
             AdminGrid.Name = "AdminGrid";
+            AdminGrid.ReadOnly = true;
             AdminGrid.RowHeadersWidth = 51;
             AdminGrid.Size = new Size(365, 172);
             AdminGrid.TabIndex = 0;
@@ -56,6 +57,7 @@
             FrontDeskGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             FrontDeskGrid.Location = new Point(545, 148);
             FrontDeskGrid.Name = "FrontDeskGrid";
+            FrontDeskGrid.ReadOnly = true;
             FrontDeskGrid.RowHeadersWidth = 51;
             FrontDeskGrid.Size = new Size(372, 172);
             FrontDeskGrid.TabIndex = 1;
@@ -65,6 +67,7 @@
             PatientGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             PatientGrid.Location = new Point(12, 346);
             PatientGrid.Name = "PatientGrid";
+            PatientGrid.ReadOnly = true;
             PatientGrid.RowHeadersWidth = 51;
             PatientGrid.Size = new Size(905, 229);
             PatientGrid.TabIndex = 2;

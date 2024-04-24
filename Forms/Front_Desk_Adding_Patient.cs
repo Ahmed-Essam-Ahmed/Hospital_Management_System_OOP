@@ -55,63 +55,87 @@ namespace Hospital_Managment_System_OOP
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(bxFirstName.Text)  || string.IsNullOrEmpty(bxLastName.Text)||
-                string.IsNullOrEmpty(bxPhoneNum.Text)|| string.IsNullOrEmpty(bxAge.Text) ||
-                string.IsNullOrEmpty(bxPHN.Text) || string.IsNullOrEmpty(bxPostal.Text) ||
-                string.IsNullOrEmpty(bxCountry.Text) || string.IsNullOrEmpty(bxAddress.Text) ||
-                string.IsNullOrEmpty(bxCity.Text) || string.IsNullOrEmpty(bxDisease.Text))
-            {
-                MessageBox.Show("Complete All Fields!");
-            }
-            else {
-                string firstName = bxFirstName.Text;
-                string lastName = bxLastName.Text;
-                string phoneNum = bxPhoneNum.Text;
-                string age = bxAge.Text;
-                string PHN = bxPHN.Text;
-                string postal = bxPostal.Text;
-                string country = bxCountry.Text;
-                string address = bxAddress.Text;
-                string city = bxCity.Text;
-                string disease = bxDisease.Text;
-                string password = string.Empty;
-                //string country = bxCountry.SelectedItem.ToString();
-                //string disease = bxDisease.SelectedItem.ToString();
+            string[] lines = File.ReadAllLines("PatientPassAndBeds.txt");
 
-                if(!IsValidName(firstName) || !IsValidName(lastName) || !IsValidName(city))
+            string lastLine = lines[lines.Length - 1];
+            string[] parts = lastLine.Split('|');
+            string lastBedNumber = parts[1];
+          
+            if (int.Parse(lastBedNumber) == 0)
+            {
+                MessageBox.Show("There Are No Beds Available For The Patient\n" +
+                    "Ask An ADMIN To Make An Availble Bed!");
+                this.Hide();
+                Front_Desk_Dashboard front_Desk_Dashboard = new Front_Desk_Dashboard();
+                front_Desk_Dashboard.Show();
+            }
+            else
+            {
+                if (string.IsNullOrEmpty(bxFirstName.Text) || string.IsNullOrEmpty(bxLastName.Text) ||
+     string.IsNullOrEmpty(bxPhoneNum.Text) || string.IsNullOrEmpty(bxAge.Text) ||
+     string.IsNullOrEmpty(bxPHN.Text) || string.IsNullOrEmpty(bxPostal.Text) ||
+     string.IsNullOrEmpty(bxCountry.Text) || string.IsNullOrEmpty(bxAddress.Text) ||
+     string.IsNullOrEmpty(bxCity.Text) || string.IsNullOrEmpty(bxDisease.Text))
                 {
-                    MessageBox.Show("Invalid first name, last name, or city!");
-                    return;
+                    MessageBox.Show("Complete All Fields!");
                 }
-                if (!IsValidNumber(phoneNum) || !IsValidNumber(age) || !IsValidNumber(PHN) || !IsValidNumber(postal))
+                else
                 {
-                    MessageBox.Show("Invalid phone number, age, PHN, or postal code!");
-                    return;
-                }
+                    string firstName = bxFirstName.Text;
+                    string lastName = bxLastName.Text;
+                    string phoneNum = bxPhoneNum.Text;
+                    string age = bxAge.Text;
+                    string PHN = bxPHN.Text;
+                    string postal = bxPostal.Text;
+                    string country = bxCountry.Text;
+                    string address = bxAddress.Text;
+                    string city = bxCity.Text;
+                    string disease = bxDisease.Text;
+                    string password = string.Empty;
+
+
+                    if (!IsValidName(firstName) || !IsValidName(lastName) || !IsValidName(city))
+                    {
+                        MessageBox.Show("Invalid first name, last name, or city!");
+                        return;
+                    }
+                    if (!IsValidNumber(phoneNum) || !IsValidNumber(age) || !IsValidNumber(PHN) || !IsValidNumber(postal))
+                    {
+                        MessageBox.Show("Invalid phone number, age, PHN, or postal code!");
+                        return;
+                    }
 
                     Patient currentPatient = new Patient(firstName, lastName, age, phoneNum, PHN,
                     postal, country, address, city, firstName + lastName, password);
 
-                string assignedPassword = currentPatient.generatePatientPassword();
+                    string assignedPassword = currentPatient.generatePatientPassword();
 
-                using (StreamWriter writer = new StreamWriter("PatientData.txt", true))
+                    using (StreamWriter writer = new StreamWriter("PatientData.txt", true))
 
-                    writer.WriteLine($"{firstName}|{lastName}|{phoneNum}|{age}|{PHN}|{postal}|{country}|{address}|" +
-                        $"{city}|{disease}|{firstName + '_' + lastName}|{assignedPassword}");
+                        writer.WriteLine($"{firstName}|{lastName}|{phoneNum}|{age}|{PHN}|{postal}|{country}|{address}|" +
+                            $"{city}|{disease}|{firstName + '_' + lastName}|{assignedPassword}");
 
 
-                MessageBox.Show($"Registration Successful!\nUsername:{firstName + '_' + lastName} \nPassword:{assignedPassword}");
-                bxFirstName.Text = string.Empty;
-                bxLastName.Text = string.Empty;
-                bxPhoneNum.Text = string.Empty;
-                bxAge.Text = string.Empty;
-                bxCountry.Text = string.Empty;
-                bxAddress.Text = string.Empty;
-                bxCity.Text = string.Empty;
-                bxPHN.Text = string.Empty;
-                bxPostal.Text = string.Empty;
-                bxDisease.Text = string.Empty;
+                    MessageBox.Show($"Registration Successful!\nUsername:{firstName + '_' + lastName} \nPassword:{assignedPassword}");
+                    bxFirstName.Text = string.Empty;
+                    bxLastName.Text = string.Empty;
+                    bxPhoneNum.Text = string.Empty;
+                    bxAge.Text = string.Empty;
+                    bxCountry.Items.Clear();    
+                    bxAddress.Text = string.Empty;
+                    bxCity.Text = string.Empty;
+                    bxPHN.Text = string.Empty;
+                    bxPostal.Text = string.Empty;
+                    bxDisease.Items.Clear();
+                    Admin Temp = new Admin();
+                    Temp.RemoveBeds();
+
+
+
+
+                }
             }
+ 
         }
 
         private void label7_Click_1(object sender, EventArgs e)
