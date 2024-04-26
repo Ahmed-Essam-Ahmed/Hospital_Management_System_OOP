@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
             label1 = new Label();
             label2 = new Label();
             bxDelete = new TextBox();
@@ -41,10 +43,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(14, 12);
+            label1.Font = new Font("Rockwell", 18F);
+            label1.ForeColor = Color.MediumPurple;
+            label1.Location = new Point(38, 46);
             label1.Name = "label1";
-            label1.Size = new Size(303, 54);
+            label1.Size = new Size(232, 35);
             label1.TabIndex = 0;
             label1.Text = "Delete a Patient";
             // 
@@ -68,41 +71,72 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.MediumPurple;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Rockwell", 10.8F);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(494, 395);
             button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
             button1.Size = new Size(86, 31);
             button1.TabIndex = 3;
             button1.Text = "Delete";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // btnHomepage
             // 
-            btnHomepage.Location = new Point(704, 553);
+            btnHomepage.BackColor = Color.Silver;
+            btnHomepage.FlatAppearance.BorderSize = 0;
+            btnHomepage.FlatStyle = FlatStyle.Flat;
+            btnHomepage.Font = new Font("Rockwell", 10.8F);
+            btnHomepage.ForeColor = Color.White;
+            btnHomepage.Location = new Point(646, 556);
             btnHomepage.Margin = new Padding(3, 4, 3, 4);
             btnHomepage.Name = "btnHomepage";
-            btnHomepage.Size = new Size(197, 31);
+            btnHomepage.Size = new Size(86, 31);
             btnHomepage.TabIndex = 4;
-            btnHomepage.Text = "Return to Homepage";
-            btnHomepage.UseVisualStyleBackColor = true;
+            btnHomepage.Text = "Log Out";
+            btnHomepage.UseVisualStyleBackColor = false;
             btnHomepage.Click += btnHomepage_Click;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(14, 553);
+            btnBack.BackColor = Color.Silver;
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Font = new Font("Rockwell", 10.8F);
+            btnBack.ForeColor = Color.White;
+            btnBack.Location = new Point(12, 556);
             btnBack.Margin = new Padding(3, 4, 3, 4);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(86, 31);
+            btnBack.Size = new Size(131, 31);
             btnBack.TabIndex = 5;
-            btnBack.Text = "Back";
-            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Text = "Homepage";
+            btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
             // TablePatient
             // 
+            dataGridViewCellStyle1.BackColor = Color.Silver;
+            dataGridViewCellStyle1.Font = new Font("Rockwell", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle1.ForeColor = Color.White;
+            TablePatient.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            TablePatient.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            TablePatient.BackgroundColor = Color.Silver;
+            TablePatient.BorderStyle = BorderStyle.None;
+            TablePatient.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.IndianRed;
+            dataGridViewCellStyle2.Font = new Font("Rockwell", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            dataGridViewCellStyle2.ForeColor = Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.True;
+            TablePatient.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             TablePatient.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            TablePatient.Location = new Point(113, 93);
+            TablePatient.Location = new Point(61, 113);
             TablePatient.Margin = new Padding(3, 4, 3, 4);
             TablePatient.Name = "TablePatient";
             TablePatient.ReadOnly = true;
@@ -114,7 +148,8 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            BackColor = Color.White;
+            ClientSize = new Size(744, 600);
             Controls.Add(TablePatient);
             Controls.Add(btnBack);
             Controls.Add(btnHomepage);
@@ -122,9 +157,11 @@
             Controls.Add(bxDelete);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 4, 3, 4);
             Name = "Admin_Delete_Patient";
-            Text = "Admin_Delete_Patient";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = " ";
             Load += Admin_Delete_Patient_Load;
             ((System.ComponentModel.ISupportInitialize)TablePatient).EndInit();
             ResumeLayout(false);

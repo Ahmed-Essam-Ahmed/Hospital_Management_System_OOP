@@ -27,10 +27,10 @@ namespace Hospital_Managment_System_OOP
                 {
                     CurrentUser.FirstName = parts[0];
                     CurrentUser.LastName = parts[1];
-                    
+
 
                     lblName.Text = ($"Welcome  {parts[0] + ' ' + parts[1]}");
-                 
+
 
                 }
             }
@@ -54,6 +54,11 @@ namespace Hospital_Managment_System_OOP
             this.Hide();
             Patient_FollowUp followUp = new Patient_FollowUp();
             followUp.Show();
+        }
+
+        private void lblName_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

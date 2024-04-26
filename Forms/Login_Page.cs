@@ -27,8 +27,8 @@ namespace Hospital_Managment_System_OOP
                         string username = bxUserName.Text;
                         string password = bxPassword.Text;
 
-                        Admin currentAdmin=new Admin(username, password);
-                        if(currentAdmin.Login())
+                        Admin currentAdmin = new Admin(username, password);
+                        if (currentAdmin.Login())
                         {
                             MessageBox.Show("Login Successful!");
                             Admin_Dashboard admin = new Admin_Dashboard();
@@ -50,13 +50,13 @@ namespace Hospital_Managment_System_OOP
                         string username = bxUserName.Text;
                         string password = bxPassword.Text;
 
-                        FrontDesk currentFrontDesk=new FrontDesk(username, password);
+                        FrontDesk currentFrontDesk = new FrontDesk(username, password);
                         {
-                            if(currentFrontDesk.Login())
+                            if (currentFrontDesk.Login())
                             {
                                 MessageBox.Show("Login Successful!");
                                 Front_Desk_Dashboard frontdesk = new Front_Desk_Dashboard();
-                                CurrentUser.UserName=username;
+                                CurrentUser.UserName = username;
                                 this.Hide();
                                 frontdesk.Show();
                                 return;
@@ -82,9 +82,9 @@ namespace Hospital_Managment_System_OOP
                             if (parts[10] == username && parts[11] == password)
                             {
                                 MessageBox.Show("Login Successful!");
-                                
+
                                 Patient_Dashboard patient = new Patient_Dashboard();
-                                CurrentUser.Password=password;
+                                CurrentUser.Password = password;
                                 this.Hide();
                                 patient.Show();
                                 return;
@@ -101,7 +101,7 @@ namespace Hospital_Managment_System_OOP
                 MessageBox.Show("Please enter a role");
             }
 
-           
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -119,6 +119,16 @@ namespace Hospital_Managment_System_OOP
         private void bxRole_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

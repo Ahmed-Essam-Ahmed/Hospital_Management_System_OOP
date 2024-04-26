@@ -60,7 +60,7 @@ namespace Hospital_Managment_System_OOP
             string lastLine = lines[lines.Length - 1];
             string[] parts = lastLine.Split('|');
             string lastBedNumber = parts[1];
-          
+
             if (int.Parse(lastBedNumber) == 0)
             {
                 MessageBox.Show("There Are No Beds Available For The Patient\n" +
@@ -121,7 +121,7 @@ namespace Hospital_Managment_System_OOP
                     bxLastName.Text = string.Empty;
                     bxPhoneNum.Text = string.Empty;
                     bxAge.Text = string.Empty;
-                    bxCountry.Items.Clear();    
+                    bxCountry.Items.Clear();
                     bxAddress.Text = string.Empty;
                     bxCity.Text = string.Empty;
                     bxPHN.Text = string.Empty;
@@ -135,7 +135,7 @@ namespace Hospital_Managment_System_OOP
 
                 }
             }
- 
+
         }
 
         private void label7_Click_1(object sender, EventArgs e)
@@ -163,5 +163,9 @@ namespace Hospital_Managment_System_OOP
             return true;
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

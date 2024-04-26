@@ -30,14 +30,14 @@ namespace Hospital_Managment_System_OOP
 
         private void Admin_AddBeds_Load(object sender, EventArgs e)
         {
-            
-             
-            
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             button2.Enabled = true;
             Admin currentAdmin = new Admin();
             currentAdmin.AddBeds();
@@ -65,7 +65,7 @@ namespace Hospital_Managment_System_OOP
                 lblBedsAvailable.Text = currentBeds;
                 button2.Enabled = false;
             }
-            else 
+            else
             {
 
                 Admin currentAdmin = new Admin();
@@ -79,7 +79,7 @@ namespace Hospital_Managment_System_OOP
 
 
             }
-           
+
         }
 
         private void btnBack_Click(object sender, EventArgs e)
@@ -94,6 +94,11 @@ namespace Hospital_Managment_System_OOP
             this.Hide();
             Login_Page login_Page = new Login_Page();
             login_Page.Show();
+        }
+
+        private void lblBedsAvailable_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

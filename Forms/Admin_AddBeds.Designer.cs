@@ -40,76 +40,103 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.Location = new Point(95, 57);
+            label1.Font = new Font("Rockwell", 18F);
+            label1.ForeColor = Color.MediumPurple;
+            label1.Location = new Point(37, 63);
             label1.Name = "label1";
-            label1.Size = new Size(378, 54);
+            label1.Size = new Size(294, 35);
             label1.TabIndex = 0;
             label1.Text = "Admin Adding Beds";
             // 
             // lblBedsAvailable
             // 
             lblBedsAvailable.AutoSize = true;
-            lblBedsAvailable.Location = new Point(258, 204);
+            lblBedsAvailable.FlatStyle = FlatStyle.Flat;
+            lblBedsAvailable.Font = new Font("Rockwell", 12F);
+            lblBedsAvailable.ForeColor = SystemColors.ButtonShadow;
+            lblBedsAvailable.Location = new Point(192, 332);
             lblBedsAvailable.Name = "lblBedsAvailable";
-            lblBedsAvailable.Size = new Size(50, 20);
+            lblBedsAvailable.Size = new Size(68, 22);
             lblBedsAvailable.TabIndex = 1;
             lblBedsAvailable.Text = "label2";
+            lblBedsAvailable.Click += lblBedsAvailable_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(445, 200);
+            button2.BackColor = Color.Silver;
+            button2.FlatAppearance.BorderSize = 0;
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Font = new Font("Rockwell", 10.8F);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(305, 325);
             button2.Name = "button2";
             button2.Size = new Size(94, 29);
             button2.TabIndex = 3;
             button2.Text = "Remove ";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(78, 204);
+            label3.Font = new Font("Rockwell", 12F);
+            label3.Location = new Point(37, 240);
             label3.Name = "label3";
-            label3.Size = new Size(98, 20);
+            label3.Size = new Size(149, 22);
             label3.TabIndex = 4;
-            label3.Text = "Beds Availale";
+            label3.Text = "Beds Available";
             // 
             // button1
             // 
-            button1.Location = new Point(334, 200);
+            button1.BackColor = Color.Silver;
+            button1.FlatAppearance.BorderSize = 0;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Font = new Font("Rockwell", 10.8F);
+            button1.ForeColor = Color.White;
+            button1.Location = new Point(37, 325);
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 5;
             button1.Text = "Add ";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // btnHome
             // 
-            btnHome.Location = new Point(598, 409);
+            btnHome.BackColor = Color.Silver;
+            btnHome.FlatAppearance.BorderSize = 0;
+            btnHome.FlatStyle = FlatStyle.Flat;
+            btnHome.Font = new Font("Rockwell", 10.8F);
+            btnHome.ForeColor = Color.White;
+            btnHome.Location = new Point(395, 653);
             btnHome.Name = "btnHome";
-            btnHome.Size = new Size(190, 29);
+            btnHome.Size = new Size(86, 31);
             btnHome.TabIndex = 6;
             btnHome.Text = "Log Out";
-            btnHome.UseVisualStyleBackColor = true;
+            btnHome.UseVisualStyleBackColor = false;
             btnHome.Click += btnHome_Click;
             // 
             // btnBack
             // 
-            btnBack.Location = new Point(12, 409);
+            btnBack.BackColor = Color.Silver;
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Font = new Font("Rockwell", 10.8F);
+            btnBack.ForeColor = Color.White;
+            btnBack.Location = new Point(12, 653);
             btnBack.Name = "btnBack";
-            btnBack.Size = new Size(94, 29);
+            btnBack.Size = new Size(131, 31);
             btnBack.TabIndex = 7;
             btnBack.Text = "Homepage";
-            btnBack.UseVisualStyleBackColor = true;
+            btnBack.UseVisualStyleBackColor = false;
             btnBack.Click += btnBack_Click;
             // 
             // Admin_AddBeds
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.White;
+            ClientSize = new Size(493, 696);
             Controls.Add(btnBack);
             Controls.Add(btnHome);
             Controls.Add(button1);
@@ -117,7 +144,9 @@
             Controls.Add(button2);
             Controls.Add(lblBedsAvailable);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Admin_AddBeds";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Admin_AddBeds";
             Load += Admin_AddBeds_Load;
             ResumeLayout(false);
