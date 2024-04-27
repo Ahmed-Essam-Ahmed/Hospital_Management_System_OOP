@@ -344,7 +344,7 @@
             bxDisease.DropDownStyle = ComboBoxStyle.DropDownList;
             bxDisease.FlatStyle = FlatStyle.Flat;
             bxDisease.Font = new Font("Rockwell", 13.8F);
-            bxDisease.ForeColor = SystemColors.Menu;
+            bxDisease.ForeColor = SystemColors.ControlText;
             bxDisease.FormattingEnabled = true;
             bxDisease.Items.AddRange(new object[] { "Chickenpox", "Common cold", "COVID-19", "Influenza", "Monkeypox" });
             bxDisease.Location = new Point(427, 401);
